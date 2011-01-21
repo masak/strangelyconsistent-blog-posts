@@ -3,7 +3,7 @@ title: The Perl 6 Coding Contest is now closed
 author: Carl Mäsak
 created: 2011-01-16T20:20:00+01:00
 ---
-<div class='quote'><code>masak++ # for making me examine the old algorithms</code></div>
+<div class='quote'><code>&lt;colomon&gt; masak++ # for making me examine the old algorithms</code></div>
 
 Time's up.
 
