@@ -3,6 +3,8 @@ title: p1: Best way to multiply a chain of matrices
 author: Carl Mäsak
 created: 2011-01-19T14:00:00+01:00
 ---
+**If you're just stumbling in and wondering what this blog post is all about, it's all about summarizing the [http://strangelyconsistent.org/blog/masaks-perl-6-coding-contest](Perl 6 coding contest).**
+
 <div class='quote'><code>&lt;moritz_&gt; I think you just killed my weekend :-)</code></div>
 
 I've reviewed and published [the p1 submissions](http://strangelyconsistent.org/p6cc2010/). On the page linked, you can browse the solutions, along with my (mostly random) notes on same.
