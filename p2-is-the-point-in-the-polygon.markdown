@@ -3,7 +3,7 @@ title: p2: Is the point in the polygon?
 author: Carl Mäsak
 created: 2011-01-22T00:36:00+01:00
 ---
-*If you're just passing by and don't have any context as to what this blog post is all about, it's all about summarizing the [http://strangelyconsistent.org/blog/masaks-perl-6-coding-contest](Perl 6 coding contest).*
+*If you're just passing by and don't have any context as to what this blog post is all about, it's all about summarizing the [Perl 6 coding context](http://strangelyconsistent.org/blog/masaks-perl-6-coding-contest).*
 
 <div class='quote'><code>&lt;colomon&gt; "It should not matter whether the points in the polygon run clockwise or counterclockwise."  Silly masak!</code></div>
 
