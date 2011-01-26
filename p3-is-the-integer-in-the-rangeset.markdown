@@ -1,7 +1,7 @@
 ---
 title: p3: Is the integer in the rangeset?
 author: Carl Mäsak
-created: 2011-01-22T00:36:00+01:00
+created: 2011-01-22T19:15:00+01:00
 ---
 *Hi! New here, and don't know what's currently going on? Well, I'm currently summarizing the results of the [Perl 6 coding context](http://strangelyconsistent.org/blog/masaks-perl-6-coding-contest).*
 
