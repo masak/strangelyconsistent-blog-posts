@@ -49,6 +49,6 @@ Ok, I need to admit I messed things up in preparing this task. I meant to steer 
 
 ...it would only make sense to implement the problem using inversion lists if the same rangeset is used for testing several different integers. When testing just one, as we do, a rangeset is overkill. Much less involved solutions exist.
 
-So this became probably the easiest problem of the bunch. Still quite nice to see how people attack it. This time, three of the submitters go for a grammar-based solutions, whereas the other two favour smaller `.split`/`.comb`-based approaches. Of the three that went with grammars, two also included tests, using the cute `MAIN()`/`MAIN('text')` idiom.
+So this became probably the easiest problem of the bunch. Still quite nice to see how people attack it. This time, three of the submitters go for a grammar-based solutions, whereas the other two favour smaller `.split`/`.comb`-based approaches. Of the three that went with grammars, two also included tests, using the cute `MAIN()`/`MAIN('test')` idiom.
 
 Make sure you [have a look](http://strangelyconsistent.org/p6cc2010/) at the solutions.
