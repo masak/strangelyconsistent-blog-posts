@@ -111,7 +111,7 @@ We now know that we should really be looking at the game in terms of components:
     4 OOOO
     5 OOOO    O
 
-Looking at it this way, we immediately spot the leftover 2-component. Since this is the only leftover component in this game position, it also makes up the winning move: take two stones from the first heap, and you'll eventually win the game. (Sure enough, this reduces the position to a 1-4-5 position, which we already know is a losing one.)
+Looking at it this way, we immediately spot the leftover 2-component. Since this is the only leftover component in this game position, it also makes up the winning move: take two stones from the first heap, and you'll eventually win the game. (Sure enough, this puts the opponent in a 1-4-5 position, which we already know is a losing one.)
 
 And that's all that needs to be said about Nim strategy. Now we have a way to recognize winnable/unwinnable positions, and a way to make the right move every time in winnable ones.
 
