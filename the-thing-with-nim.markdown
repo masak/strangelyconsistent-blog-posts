@@ -115,4 +115,4 @@ Looking at it this way, we immediately spot the leftover 2-component. Since this
 
 And that's all that needs to be said about Nim strategy. Now we have a way to recognize winnable/unwinnable positions, and a way to make the right move every time in winnable ones.
 
-But what does this have to do with p4? Last I looked p4 wasn't Nim? Well, as it happens, Nim is the "base game" for a whole family of games; specifically, the "taking and breaking" games mentioned at the beginning. More on that in the next post.
+But what does this have to do with p4? Last I looked p4 wasn't Nim... Well, as it happens, Nim is the "base game" for a whole family of games; specifically, the "taking and breaking" games mentioned at the beginning. More on that in the next post.
