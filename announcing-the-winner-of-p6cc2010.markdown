@@ -22,3 +22,5 @@ Using an unquestionable, intrinsically subjective, never-to-be-divulged scoring 
 *drum roll*
 
 Moritz Lenz! Congratulations!
+
+This concludes this year's contest. Stand by, maybe, for a "lessons learned from p6cc2010" post. Or possible some totally different post.
