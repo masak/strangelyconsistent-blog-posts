@@ -59,7 +59,9 @@ There were a number of things that I *didn't* say, but which we now know, especi
 * It is possible to play this game perfectly.
 * Under perfect play, the game is already a foregone conclusion before the first move.
 * Playing perfectly is a simple matter of putting the game in a losing position each time, which is the same as making all the components (nim-)sum to zero.
-* The (nim-)value of each component can be easily calculated:
+* The (nim-)value of each component can be easily calculated.
+
+For the values were calculated in the last blog post, like this:
 
     $ perl6 -e 'my @g = 0, 0; print "0.0"; loop { my %set;
                 ++%set{@g[$_] +^ @g[* - $_ - 2]} for 0 .. @g/2 - 1;
@@ -79,7 +81,7 @@ will be a win for the first player, and which ones will be a win for the second 
 
 In other words, the starting positions with 2, 3, 7, 11, 17, 23... stones are wins for the first player, and the rest are wins for the second player. The sequence 2, 3, 7, 11, 17, 23... corresponds to the positions of the 0s in the sequence above, except we've added 2 to each position.
 
-So if we were to, say, [pit all the five non-trivial solutions against each other]() in all possible combinations and with a number of different values of `$N`, we could pick up the places where the algorithms *deviate* from perfect play.
+So if we were to, say, [pit all the five non-trivial solutions against each other](https://gist.github.com/824207) in all possible combinations and with a number of different values of `$N`, we could pick up the places where the algorithms *deviate* from perfect play.
 
 And they all deviate from perfect play: moritz's first and second algorithm, fox's agorithm, colomon's first algorithm...
 
