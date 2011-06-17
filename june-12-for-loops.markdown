@@ -3,11 +3,11 @@ title: June 12 2011: for loops
 author: Carl Mäsak
 created: 2011-06-12T23:54:04+02:00
 ---
-Yesterday, we got array variables, and there was much rejoicing. We saw how to add and remove things at the ends. We learned how to treat arrays as a single item. We learned how to inspect and change individual array elements.
+Yesterday, we went through array variables, and there was much rejoicing. We saw how to add and remove things at the ends. We learned how to treat arrays as a single item. We learned how to inspect and change individual array elements.
 
 But there's something missing still. Something important. We will often want a way to say, "for every element in this array, do this...".
 
-We need a loop for arrays.
+We need a kind of loop for arrays.
 
     my @seasons = "winter", "spring", "summer", "fall";
     
@@ -20,7 +20,9 @@ We need a loop for arrays.
     # Yay, summer!
     # Yay, fall!
 
-Our good friend the topic variable `$_` shows up again here. The for loop takes care of *binding* it to the appropriate value; in this case, to each element in the array in turn. Since the array contains four elements, we make four iterations through it. Simple.
+In the olden days, one used to loop through arrays by repeatedly increasing an index counter (often called `$i`), and then indexing the array with it. This is now considered gauche and primitive.
+
+Our good friend the topic variable `$_` shows up again here. The for loop takes care of *binding* it to the appropriate value; in this case, it is bound to each element in the array in turn. Since the array contains four elements, we make four iterations through it. Simple.
 
 So, to summarize, `given` sets the topic for a single value, whereas `for` sets the topic for each of the elements in an array or list.
 
@@ -53,14 +55,16 @@ We don't have to loop over arrays, either. Here's a short program that loops ove
         say "'$word' has $word.chars() characters";
     }
 
-The output would look like this:
+Running the program could look like this:
 
     Enter a sentence: This isn't my hamster
-    This has 4 characters
-    isn't has 5 characters
-    my has 2 characters
-    hamster has 7 characters
+    'This' has 4 characters
+    'isn't' has 5 characters
+    'my' has 2 characters
+    'hamster' has 7 characters
 
-Two new methods above: `.words` is a method on a string that returns a list of contiguous "word characters" (anything but whitespace). `.chars` gives the length (number of characters) of a string. Note that we can even do method calls and have them interpolate in strings; the proviso is that we end in parentheses (`()`).
+Two new methods above: `.words` is a method on a string that returns a list of contiguous "word characters" (anything but whitespace).
 
-That's it for today. Tomorrow we'll have a look at regexes, whatever that may be.
+`.chars` gives the length (number of characters) of a string. Note that we can even do method calls and have them interpolate in strings; the proviso is that we end in parentheses (`()`).
+
+That's it for today. Tomorrow we'll have a look at regexes, whatever that may be. `:-)`
