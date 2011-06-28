@@ -13,12 +13,12 @@ Here are my plans for the remaining ten days:
 22\. sprintf and .fmt<br>
 23\. map and grep<br>
 24\. types<br>
-25\. four in a row<br>
+25\. **four in a row**
 
 26\. signatures<br>
 27\. classes<br>
 28\. roles<br>
-29\. adventure game I<br>
-30\. adventure game II<br>
+29\. **adventure game I**<br>
+30\. **adventure game II**
 
 Let's do this. Again.
