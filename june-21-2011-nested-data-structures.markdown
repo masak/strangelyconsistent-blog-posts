@@ -11,9 +11,11 @@ There is indeed. The simplest variation on the theme is that we can put arrays a
     say $names[1];       # "Dewey"
     
     my %words = { book => "書", fish => "魚", door => "門" };
-    say %words<book>;    # "書"
+    say %words{"book"};  # "書"
 
 You'll note that when we're using the dollar (`$`) sigil to denote scalar variables, we instead have to indicate that the value we're storing is an array (`[ ... ]`) or a hash (`{ ... }`). By an astonishing coincidence &mdash; which of course isn't a coincidence &mdash; these are the same symbols that are used for indexing arrays and hashes, respectively.
+
+(Well, actually... there are two ways of writing hash indexings, as you might recall from [the post about hashes](http://strangelyconsistent.org/blog/june-17-2011-hashes). `%words{"book"}` is the general one, the one where you can write any expression you want within the indexing curly braces. When we're dealing with literal strings, it's easier to write it as `%words<book>`. Only the curly braces (`{ ... }`) can be used for creating hashes; the pointy brackets (`< ... >`) are used for creating lists of literal strings. Thus, `<liberty equality fraternity>` is a list of three literal strings, and we didn't have to surround them by quotes and separate them by commas because we used the pointy brackets.)
 
 "Ok,' I hear you saying. "I needed a new, different way to create arrays and hashes like I needed a hole in the head." Well, astute reader, that's a fair observation. But now let me unveil this thing, and...
 
