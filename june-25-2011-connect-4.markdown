@@ -3,7 +3,7 @@ title: June 25 2011: Connect 4
 author: Carl Mäsak
 created: 2011-07-03T02:00:08+02:00
 ---
-Today we'll implement [Connect 4](http://en.wikipedia.org/wiki/Connect_4). In our version, it's played between players `X` and `O` on a 6 ⨯ 7 grid.
+Today we'll implement [Connect 4](http://en.wikipedia.org/wiki/Connect_4). In our version, it's played between players `X` and `O` on a 7 ⨯ 6 grid.
 
 The game is a bit bigger than what we've seen so far, but all of the individual pieces are (mostly) straightforward. As usual, comments come at the end.
 
@@ -76,7 +76,7 @@ And here's the source code:
     }
     
     sub board_is_full {
-        pile_is_full(all( 1 .. $WIDTH - 1));
+        pile_is_full(all(1 .. $WIDTH - 1));
     }
     
     sub input_move {
@@ -199,13 +199,13 @@ Ok, lots to comment on here:
 
 * The `was_win` subroutine checks all the possible straights that the move *could* have made. It doesn't check the whole board. For straights of length 4, it checks up to 16 possible straights. (4 vertical, 4 horizontal, and 8 diagonal.)
 
-* Notice that `was_win` defines four subroutines *inside* of itself. Those subroutines are purely for internal use by `was_win` &mdash; they're not even visible from the outside. They also cunningly use variables from outside of themselves; `$row` and `$column` are parameters to `wan_win`, but are used within `was_vertical_win`, for example.
+* Notice that `was_win` defines four subroutines *inside* of itself. Those subroutines are purely for internal use by `was_win` &mdash; they're not even visible from the outside. They also cunningly use variables from outside of themselves; `$row` and `$column` are parameters to `was_win`, but are used within `was_vertical_win`, for example.
 
 * In fact, another variable that's used inside the subroutines but defined outside, is `@board`. It should figure as a parameter to *all* the subroutines in the program if we wanted to make them independent of their environment. It's slightly bad practice not to make it a parameter, because that code is now *coupled* to `@board`... but it was felt that it would hurt exposition too much to be 100% kosher in this case. Programming is full of trade-offs.
 
 * The `uniform` subroutine inside of `was_win` contains two things that we haven't seen yet. `@values».defined` means the same as `map { .defined }, @values`; it's just a shorter way of writing it. `[eq] @values` tests all values in `@values` with the `eq` operator. In summary, the `uniform` function checks that all values in `@values` are defined (which happens when none of the coordinates was outside of the board), and that they're all string-equal (which happens when someone made a winning straight).
 
-* Notive how we use `map` in the `was_*_win` functions to translate from the "coordinates" 0..3 to actual positions along a line in `@board`. That should give a taste of how versatile `map` can actually be: we want to talk about the contents of the things on a line on the board, so we just transform 0..3 to that line.
+* Notice how we use `map` in the `was_*_win` functions to translate from the "coordinates" 0..3 to actual positions along a line in `@board`. That should give a taste of how versatile `map` can actually be: we want to talk about the contents of the things on a line on the board, so we just transform 0..3 to that line.
 
 * Because we have put all of the nitty-gritty details in subroutines, the actual game loop is fairly short. Show the board, input a move, place a piece, check the two possible ending conditions, and switch player. And it reads well, too: `if board_is_full` &mdash; isn't that nice?
 

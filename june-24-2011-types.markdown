@@ -73,7 +73,7 @@ The `Whatever` type contains one value: the `*` that we've seen in array indexin
 
 All normal types are subtypes of `Any`. In fact, if you don't give a variable a type declaration, `Any` is the type it will have. `Any` is in many senses the top type of the "normal" type system.
 
-The only thing that lies outside of it is `Junction`, the special scalar value that can act like many values simultaneously. Junctions with their autothreading and inside-out behaviors may appear magical at times, but all that magic really stems from the fact that they're outside of the "noremal" type hierarchy.
+The only thing that lies outside of it is `Junction`, the special scalar value that can act like many values simultaneously. Junctions with their autothreading and inside-out behaviors may appear magical at times, but all that magic really stems from the fact that they're outside of the "normal" type hierarchy.
 
 At the very top, uniting the normal `Any` and the abnormal `Junction`, sits the ur-type... `Mu`. It is the mother of all types, the emptiness from which the world sprang forth. It is the silent lowing of the cosmic cow, a disturbing ripple in the fabric of existence itself. It is the riddle of emptiness in a world of chaos. It is nothing, and everything.
 
