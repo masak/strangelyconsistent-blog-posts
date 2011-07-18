@@ -27,7 +27,7 @@ Here's another convenient thing we can use it for:
     say sprintf "Thirds always give me trouble: %5.2f", 1/3
         # "Thirds always give me trouble:  0.33"
 
-Whereas the `%d` is for integers, the `%f` is for floating-point values. (It's probably best to avoid confusing oneself by thinking of the non-integers as "decimal numbers" in this case.)
+Whereas the `%d` is for integers, the `%f` is for floating-point values. (Since it's integers that are denoted by `%d`, it's probably best in this case not to think of non-integer numbers as "decimal numbers", which would be confusing.)
 
 So. Any time you feel the need to round a number to two decimal places (or whatever) before printing it, don't reach for all manner of tricky arithmetic to do it. Reach for `sprintf`.
 

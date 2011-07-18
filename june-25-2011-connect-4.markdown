@@ -76,7 +76,7 @@ And here's the source code:
     }
     
     sub board_is_full {
-        pile_is_full(all(1 .. $WIDTH - 1));
+        pile_is_full(all(0 .. $WIDTH - 1));
     }
     
     sub input_move {

@@ -68,7 +68,7 @@ Or even just passing in the function directly:
 Oh, the `is_prime` function? No, it's not built in. I guess I should define it for you:
 
     sub is_prime($n) {
-        return ?none( 2 .. $n - 1 ) %% $n;
+        return ?($n %% none 2 .. $n - 1);
     }
 
 \[Author's note: go back and add `%%` to the "Arithmetic" post, apparently we needed it. `:-)`\]

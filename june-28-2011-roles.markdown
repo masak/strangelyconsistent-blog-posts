@@ -3,7 +3,7 @@ title: June 28 2011: Roles
 author: Carl Mäsak
 created: 2011-07-06T00:18:11+02:00
 ---
-Having learned how to create classes, we might go on to create them to our hearts content:
+Having learned how to create classes, we might go on to create them to our hearts' content:
 
     class Hammer {
         method hammer($stuff) {
@@ -37,7 +37,7 @@ A new concept, the *role* comes to our rescue:
         }
     }
 
-WHereas classes are often named after an appropriate noun, roles are often named after a participle, such as `Hammering`. It's not a hard-and-fast rule, but it's a good rule of thumb. I really shouldn't be talking about thumbs, what with all the hammering going on...
+Whereas classes are often named after an appropriate noun, roles are often named after a participle, such as `Hammering`. It's not a hard-and-fast rule, but it's a good rule of thumb. I really shouldn't be talking about thumbs, what with all the hammering going on...
 
 Now the class definitions become easy:
 
