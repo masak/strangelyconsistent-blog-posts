@@ -22,7 +22,12 @@ Note the use of `.invert` to extrapolate the second half of the opposite directi
 
 There are two roles, `Thing` and `Room`. That will make more sense tomorrow, when we actuall introduce things that aren't rooms.
 
-In the game, the rooms are connected as shown [on this map](https://github.com/masak/crypt/blob/master/images/map.png). There are no coordinates placing the rooms anywhere. One *could* view them as sitting in a 2x3x2 grid, with coordinates to denote position, and neighbourhood relations being indicated by nearness, or something. It would be a bit fragile, but could be made to work.
+In the game, the rooms are connected as shown on this map:
+
+<img src="http://strangelyconsistent.org/blog/images/crypt-map.png"
+     width="720px" height="540px">
+
+There are no coordinates placing the rooms anywhere. One *could* view them as sitting in a 2x3x2 grid, with coordinates to denote position, and neighbourhood relations being indicated by nearness, or something. It would be a bit fragile, but could be made to work.
 
 What we're really interested in, however, is how the rooms are connected. During the course of the game, we'll also want to connect and disconnect rooms as new exits are presented and old ones are taken away. That's what the `.connect` and `.disconnect` methods do.
 
