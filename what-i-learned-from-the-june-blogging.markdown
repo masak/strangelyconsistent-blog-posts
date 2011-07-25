@@ -25,12 +25,16 @@ Having done three November blogging months, I guess I didn't expect to learn muc
 
 * **It's easier to explain a concept than to explain why you wrote a game the way you did.** Or rather, it got more difficult to adequately explain the games the bigger they got. It's like small games contain all these interesting little decisions, and that's fine to explain. But then as they grow bigger they also start to contain all these overarching, architectural decisions. And there just isn't enough blog space and reader attention to focus both on the big and the small issues, so I increasingly focused on the big ones. But the little decisions are still there, even in the bigger games.
 
+* **There's just so much to tell.** I'm thinking of adding sections to each chapter named "The full story" or something, just to bring up the slightly more advanced topics that aren't necessarily in the path of someone who just wants to learn the basics and implement a game.
+
 ## What I learned from writing a text adventure game
 
 * **It was just as enjoyable as I hoped it would be.** I had been looking forward to this.
 
-* **It is a bigger project and takes more time than one might think.** How hard can it be, right? Just four, no five, no six rooms. Be done in a jiffy.
+* **It is a bigger project and takes more time than one might think.** How hard can it be, right? Just four, no five, no six rooms. Be done in a jiffy. Looking at the commit logs for the game, it seems it took closer to 14 days. Keep in mind, that's for a game I expected to have ready in two days. Oh, the optimism.
 
-* **I wish I had written tests for it.** Not sure how it would have affected the code, but the game *definitely* is complex enough to merit tests. Henceforth, my answer to the question "Shall I write tests?" will be "Is it more than a screenful of code?".
+* **I wish I had written tests for it.** Not sure how it would have affected the code, but the game *definitely* is complex enough to merit tests. Henceforth, my answer to the question "Shall I write tests?" will be "Is it more than a screenful of code?". (The sad thing is, I *know* this, and have for a long time. I should listen more to myself.)
+
+* **The game isn't finished.** I had to push it out into the world, but feedback keeps coming in, and it'll keep settling and evolving for quite some time yet. It's a big little program now, and won't just sit around doing nothing. All I can do as a proud parent is look on from a distance and hope for the best.
 
 Fun as it was, I can't think of a followup for this project for next June. Let's just see where we are at that point and decide then. 哈哈
