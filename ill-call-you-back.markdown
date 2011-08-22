@@ -20,8 +20,8 @@ The call to the formatter went from this:
 ...to this:
 
 <pre><code>&#160;&#160;&#160;&#160;Text::Markup::Wiki::Minimal.new.format(
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$.storage.read\_page($page),
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>{ self.make\_link($^page) }</b> 
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$.storage.read_page($page),
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>{ self.make_link($^page) }</b>
 &#160;&#160;&#160;&#160;)</code></pre>
 
 That second argument is the callback. It adjusts for the fact that what we want to send along is a method, but we can't send a method as-is, because at the receiving end there's no object to call it on. It also makes modest use of Perl 6's placeholder variables, effectively making this a one-parameter closure. We're not sending in `make_link` in itself, but a piece of code which knows how to call it.
