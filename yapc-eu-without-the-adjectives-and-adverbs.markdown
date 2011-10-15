@@ -3,7 +3,7 @@ title: YAPC::EU without the adjectives and adverbs
 author: Carl Mäsak
 created: 2011-08-22T23:03:00+02:00
 ---
-YAPC::EU 2009 deserves adjectives and adverbs. A lot of them. But I hear constraint liberates, so let's try a post without them.
+YAPC::EU 2011 deserves adjectives and adverbs. A lot of them. But I hear constraint liberates, so let's try a post without them.
 
 * **The venue.** I liked it.
 
