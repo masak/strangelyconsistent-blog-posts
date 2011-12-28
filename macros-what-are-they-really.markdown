@@ -1,5 +1,5 @@
 ---
-title: Macros &mdash; what are they, really?
+title: Macros &#8212; what are they, really?
 author: Carl Mäsak
 created: 2011-10-15T16:13:00+02:00
 ---

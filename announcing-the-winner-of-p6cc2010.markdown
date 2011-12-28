@@ -1,5 +1,5 @@
 ---
-title: Announcing the winnder of masak's Perl 6 Coding Contest 2010
+title: Announcing the winner of masak's Perl 6 Coding Contest 2010
 author: Carl Mäsak
 created: 2011-03-26T00:03:00+01:00
 ---

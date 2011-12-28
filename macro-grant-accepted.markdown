@@ -7,4 +7,4 @@ A while ago, I [applied for a Hague grant to give Rakudo macros](http://news.per
 
 Yay! \o/
 
-I haven't blogged much lately, and I suspect it might be because my blogging plans are to ambitious to fit in my fragmented schedule. So I'll stop here. But expect the first status report of the grant soonish.
+I haven't blogged much lately, and I suspect it might be because my blogging plans are too ambitious to fit in my fragmented schedule. So I'll stop here. But expect the first status report of the grant soonish.
