@@ -5,7 +5,7 @@ created: 2011-12-28T21:49:17+01:00
 ---
 The p6cc contest is underway. Yay.
 
-\[Coke]++ discovered on the channel that Rakudo nom didn't have a `-c` flag. The five `base-test` files all syntax-check the corresponding `code` files using the `-c` flag. Which made Rakudo nom and the `bast-test` files incompatible. Oh noes.
+\[Coke]++ discovered on the channel that Rakudo nom didn't have a `-c` flag. The five `base-test` files all syntax-check the corresponding `code` files using the `-c` flag. Which made Rakudo nom and the `base-test` files incompatible. Oh noes.
 
     <moritz> moritz-- # not reviewing the test harness properly
 
