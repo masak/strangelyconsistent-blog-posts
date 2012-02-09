@@ -96,7 +96,7 @@ Let's put *that* in a file and call it `words`.
 Finally, we have the game itself. Look how short it is! (Of course, partly because we put all the data in files...)
 
     my @states = slurp("states").split("\n\n");
-    my $WORD = lines("words").roll;
+    my $WORD = lines("words".IO).roll;
     my %letters_found;
     
     while @states {
