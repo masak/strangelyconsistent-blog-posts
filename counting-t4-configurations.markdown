@@ -1,7 +1,7 @@
 ---
 title: Counting t4 configurations
 author: Carl Mäsak
-created: 2012-04-25T15:37:54+02:00
+created: 2012-03-25T15:37:54+02:00
 ---
 <img style="display: block; margin-left: auto; margin-right: auto; padding: 1em" title="Photo by prilfish, http://www.flickr.com/photos/silkebaron/2573215246/" src="http://strangelyconsistent.org/blog/images/ko-lanta-beach.jpg" />
 
