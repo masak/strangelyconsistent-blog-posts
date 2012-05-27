@@ -93,13 +93,7 @@ were all, these puzzles would be merely mechanical and boring. But what often
 happens is that *the dependencies are not cleanly separated*, and you have the
 additional problem of not tripping over your own pieces. Here's an example:
 
-      ..  q4  ..  ..  t7
-    ..  q3  j3  j4  t6  ..
-      q2  e3  k3  k4  ..
-    l1  l2  e4  ..  c4  ..
-      m1  m2  ..  d5  c5
-    ..  ..  n3  n4  d6  c6
-      ..  o2  o3  o4  ..
+<img style="display: block; margin-left: auto; margin-right: auto; padding: 1em" src="http://strangelyconsistent.org/blog/images/t4-example-conf.png" />
 
 We trivially notice that in order to get the bullet (the `l` piece) across, we
 need to move aside the `e` piece and the `c` piece. But in the starting
@@ -143,7 +137,7 @@ Though such a solution is certainly possible, I have a creeping suspicion that
 it would be far more complex than the A* approach. It's unclear how many
 special cases it would need to contain in order to work out all the
 dependencies. One gets a bit of extra respect at the pattern-matching and
-hypithetical-future algorithms in one's own brain when trying to code up the
+hypothetical-future algorithms in one's own brain when trying to code up the
 same things as a program.
 
 Be that as it may. [Have a look at people's
