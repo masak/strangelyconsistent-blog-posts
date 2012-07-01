@@ -22,7 +22,7 @@ As you might remember from [my last macros grant status update](http://strangely
 > expect D2 to be quite easy to implement.
 
 This "next generation of AST technology" is called QAST; that's what you get if
-you "increment" our current AST format PAST. Of course, as all geeks, we 
+you "increment" our current AST format PAST. Of course, as all geeks, we
 on the `#perl6` channel love backformations.
 
 <pre><code>&lt;felher&gt; What does the 'Q' in QAST stand for?
@@ -98,7 +98,7 @@ that I would probably have needed anyway.
 Here's what I've done so far. You can sort of see how jnthn++ lets me have a go
 at bigger and bigger bits.
 
-* A unary operator [(test)](http://github.com/perl6/nqp/commit/53d95cc57c988fce3bcbdf754cfa7f51d0fe14a6), [(implementation)](http://github.com/perl6/nqp/commit/7179ed354511e824e45476c53f34ac225325ad05]
+* A unary operator [(test)](http://github.com/perl6/nqp/commit/53d95cc57c988fce3bcbdf754cfa7f51d0fe14a6), [(implementation)](http://github.com/perl6/nqp/commit/7179ed354511e824e45476c53f34ac225325ad05)
 * A bigint conversion op [(here)](http://github.com/perl6/nqp/commit/6f1b074724a3b28a354ef695538d5b1dc84d75bb)
 * Lots of opcodes at the same time [(here)](http://github.com/perl6/nqp/commit/0ce175f22ccce4038ee85e7a4a8a4e698fd3af60), [(here)](http://github.com/perl6/nqp/commit/d36485eafc917009f57de9b60fed8e5c0e4b8a68)
 * Keyed and positional operations [(keyed)](http://github.com/perl6/nqp/commit/5d24bc1d40d29e31629314fa313d4ae888948f3c), [(more keyed)](http://github.com/perl6/nqp/commit/8fc641598ebd9bd084e3a35470cba590eb5b384b), [(positional)](http://github.com/perl6/nqp/commit/b0705d6b926ef84f49f65f76fcdf6451a19ba997)
