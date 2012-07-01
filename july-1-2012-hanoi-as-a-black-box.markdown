@@ -28,7 +28,7 @@ Here are our design primitives:
 > all of them to the right rod.
 
 This starts us down the road of understanding the language and the bounded
-context we're dealing with. There's still many details that need sorting out,
+context we're dealing with. There are still many details that need sorting out,
 though.
 
 Specifically, the adventure game will influence and distort the way the Hanoi
@@ -89,7 +89,7 @@ report back why it won't do what you told it to:
 * `X::Hanoi::NoSuchRod` &mdash; no, you can't do something with the rod `:name` of type `:rod` (source or target) because it doesn't exist
 * `X::Hanoi::NoSuchDisk` &mdash; no, you can't move, add, or remove a `:disk` that doesn't exist either
 * `X::Hanoi::RodHasNoDisks` &mdash; no, you can't move disks from rod `:name` that doesn't have any disks
-* `X::Hanoi::DiskHasBeenRemoved` &mdash; no, you can't `:action` (move or remove) a `:disk` but it's not currently in the game
+* `X::Hanoi::DiskHasBeenRemoved` &mdash; no, you can't `:action` (move or remove) a `:disk` because it's not currently in the game
 * `X::Hanoi::DiskAlreadyOnARod` &mdash; no, you can't add a disk from outside the game that is already in the game
 * `X::Hanoi::ForbiddenDiskRemoval` &mdash; no, you can't remove that `:disk` from the game
 * `X::Hanoi::LargerOnSmaller` &mdash; no, you can't put a `:larger` disk on a `:smaller` one according to the rules
