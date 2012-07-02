@@ -56,7 +56,7 @@ Look, a game!
     -------------------------------------
 
     > move middle left
-    Cannot move from the middle rod because there is no disk there
+    Cannot move from the middle rod because there is no disk there.
 
     > move left middle
 
@@ -68,8 +68,8 @@ Look, a game!
      =========       ===           =     
     -------------------------------------
 
-    > move middle right
-    Cannot put the small disk on the tiny disk
+    > move small disk right
+    Cannot put the small disk on the tiny disk.
 
     > quit
 
