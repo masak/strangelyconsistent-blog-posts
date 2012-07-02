@@ -120,7 +120,7 @@ situations for which they were not designed.
 
 ## Command-line client
 
-As soon as I [implemented the client](https://github.com/masak/crypt/commit/72ef665c3faec428968eaa7a4db66c43ea3f4802) that you see above, I got feedback from people. I got many good bug reports and could put in things that I'd forgotten.
+As soon as I [implemented the client](https://github.com/masak/crypt/commit/72ef665c3faec428968eaa7a4db66c43ea3f4802) that you see above, I got feedback from people. There's a lesson in there somewhere. I got many good bug reports and could put in things that I'd forgotten.
 
 * [Removing a non-existent disk](https://github.com/masak/crypt/commit/45fb27113b9d47d1a65ce446ea9b517e25328f6c) gave the wrong exception back. Coke++ discovered this, and I fixed it.
 * [The client didn't tell you when you won](https://github.com/masak/crypt/commit/ed7110e4517169d40acd99933f78e9c6ae4871da) or un-won. It does now. Coke++.
@@ -131,6 +131,8 @@ weakness of this way of developing, but I would argue the opposite: this way of
 focusing on verbs and their results *enhances* the ability to think in terms of
 these situations. Also note how small and self-contained each commit is, even
 the fixes.
+
+I'm really proud how the client turned out. Have a look at [the 'final' client](https://github.com/masak/crypt/blob/9f9b0becffa6fbca5c511fa6e78e7226a09b4331/bin/crypt#L231). I especially call your attention to the fact that we don't just list the available commands, we *ask the Hanoi game for them*. (Yay introspection!) Also, the `print_board` subroutine turned out really nice, for something that does formatted output. There's a little "cheating" that makes the command parser treat things like 'large disk' as one argument even though it's two words.
 
 ## So
 
