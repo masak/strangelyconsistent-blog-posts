@@ -87,7 +87,7 @@ at the exceptional return values, those that don't change the state and just
 report back why it won't do what you told it to:
 
 * `X::Hanoi::NoSuchRod` &mdash; no, you can't do something with the rod `:name` of type `:rod` (source or target) because it doesn't exist
-* `X::Hanoi::NoSuchDisk` &mdash; no, you can't move, add, or remove a `:disk` that doesn't exist either
+* `X::Hanoi::NoSuchDisk` &mdash; no, you can't `:action` (add or remove) a `:disk` that doesn't exist either
 * `X::Hanoi::RodHasNoDisks` &mdash; no, you can't move disks from rod `:name` that doesn't have any disks
 * `X::Hanoi::DiskHasBeenRemoved` &mdash; no, you can't `:action` (move or remove) a `:disk` because it's not currently in the game
 * `X::Hanoi::DiskAlreadyOnARod` &mdash; no, you can't add a disk from outside the game that is already in the game
