@@ -3,7 +3,7 @@ title: July 2 2012 &#8212; implementing Hanoi
 author: Carl Mäsak
 created: 2012-07-02T22:52:30+02:00
 ---
-Yesterday was about the interface. Today is about the implementation.
+[Yesterday](http://strangelyconsistent.org/blog/july-2-2012-implementing-hanoi) was about the interface. Today is about the implementation.
 
 Look, a game!
 

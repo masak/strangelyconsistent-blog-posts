@@ -68,8 +68,8 @@ Suddenly this feels pretty exciting. 哈哈 Come on folks, nail the masakbot!
 Oh, and I wrote a plan for the whole month. Subject to change, but the basic
 structure is hopefully there.
 
-* 2012-07-01: describing the hanoi subgame; methods/events/exceptions
-* 2012-07-02: implementing the hanoi subgame
+* [2012-07-01](http://strangelyconsistent.org/blog/july-1-2012-hanoi-as-a-black-box): describing the hanoi subgame; methods/events/exceptions
+* [2012-07-02](http://strangelyconsistent.org/blog/july-2-2012-implementing-hanoi): implementing the hanoi subgame
 * 2012-07-03: testing the adventure game, looking around
 * 2012-07-04: moving around I (compass directions)
 * 2012-07-05: moving around II (up/down, in/out)
