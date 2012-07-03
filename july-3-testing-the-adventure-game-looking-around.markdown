@@ -25,9 +25,13 @@ It's a reduced version of the loop we wrote yesterday for the Hanoi game.
 Neat. But the game doesn't understand `look` yet. We need to do something about
 that. Time to write our first test.
 
-We [implement looking
-around](https://github.com/masak/crypt/commit/c848fd4cfe1ffabf0deb16c46ac7a173c7feec5b).
-Look how easy it is. Then we [hook it up to the command
+We [implement
+looking](https://github.com/masak/crypt/commit/c848fd4cfe1ffabf0deb16c46ac7a173c7feec5b).
+See how easy it is. (Yes, we are hardcoding things when we can get away with
+it. But that's OK; then we'll need to write tests to make sure they can
+change.)
+
+Now we [hook looking into the command
 loop](https://github.com/masak/crypt/commit/2efa9e7e9b6a61e994ea7cdbba8dfbc99f55b053).
 
 Now this happens:
