@@ -31,10 +31,10 @@ and forth as I try for the best way to factor things. I pray your indulgence.
 
 Anyway, taking a step back to design and language for a while:
 
-> The player can *walk* in our adventure game, because we have a concept of *rooms*,
-> each one having zero or more *exits* connecting to other rooms. We talk about
-> *connecting* two rooms to give them exits to each other. Rooms can also be
-> *disconnected*. Rooms and their connections form a sort of topology, a graph on
+> The player can **walk** in our adventure game, because we have a concept of **rooms**,
+> each one having zero or more **exits** connecting to other rooms. We talk about
+> **connecting** two rooms to give them exits to each other. Rooms can also be
+> **disconnected**. Rooms and their connections form a sort of topology, a graph on
 > which the player moves. The topology may change during the course of the game,
 > as rooms connect to and disconnect from each other.
 
