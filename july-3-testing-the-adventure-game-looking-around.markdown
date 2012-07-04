@@ -81,6 +81,6 @@ I was a bit hesitant in making `PlayerLooked` an event. It felt like looking
 might be a "pure" operation without side effects. Then I remembered that
 sometimes in the game looking *does* have side effects. So it definitely
 belongs there. If looking didn't have side effects, we might handle looking
-entirely in the `MAIN()` mehthod. But I think I prefer it this way.
+entirely in the `MAIN()` method. But I think I prefer it this way.
 
 Ok, that's it for today. Tomorrow we'll add walking around to our repertoire.
