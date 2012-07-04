@@ -65,6 +65,15 @@ The `Crypt::Game` class now has a `BUILD` method that sets things up using
 `Adventure::Engine`. The idea is that this is how you "configure" an adventure
 game; in the `BUILD` method. We'll see how that works out in practice.
 
+(Actually the biggest point of cheating I introduced today was this line in the
+above commit:
+
+    has $!player_location = 'clearing';
+
+The problem with it is that it is in `Adventure::Engine`, which is the wrong
+context for that initialization to be in. (Not all adventure games start in a
+clearing.) I'll fix that in the next few days.)
+
 And then we need to do one more thing to make `walk` work in the actual game.
 We need to [implement verb
 binding](https://github.com/masak/crypt/commit/457e63f913a539b3f7e991c2736627fbe180e859).
