@@ -75,8 +75,8 @@ context for that initialization to be in. (Not all adventure games start in a
 clearing.) I'll fix that in the next few days.)
 
 And then we need to do one more thing to make `walk` work in the actual game.
-We need to [implement verb
-binding](https://github.com/masak/crypt/commit/457e63f913a539b3f7e991c2736627fbe180e859).
+We need to [bind CLI commands to method
+calls](https://github.com/masak/crypt/commit/457e63f913a539b3f7e991c2736627fbe180e859).
 Yes, I adapted that bit from the Hanoi game.
 
 And lo, walking now works!
