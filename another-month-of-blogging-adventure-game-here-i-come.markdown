@@ -72,8 +72,8 @@ structure is hopefully there.
 * [2012-07-02](http://strangelyconsistent.org/blog/july-2-2012-implementing-hanoi): implementing the hanoi subgame
 * [2012-07-03](http://strangelyconsistent.org/blog/july-3-testing-the-adventure-game-looking-around): testing the adventure game, looking around
 * [2012-07-04](http://strangelyconsistent.org/blog/july-4-moving-around-i-compass-directions): moving around I (compass directions)
-* 2012-07-05: moving around II (up/down, in/out)
-* 2012-07-06: room descriptions (look)
+* [2012-07-05](http://strangelyconsistent.org/blog/july-5-moving-around-ii-up-down-in-out): moving around II (up/down, in/out)
+* [2012-07-06](http://strangelyconsistent.org/blog/july-6-room-descriptions-look): room descriptions (look)
 * 2012-07-07: more testing; restoring and saving
 * 2012-07-08: blocked exits
 * 2012-07-09: things and descriptions
