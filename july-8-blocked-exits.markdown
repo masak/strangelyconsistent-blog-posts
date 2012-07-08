@@ -1,7 +1,7 @@
 ---
 title: July 8 2012 &#8212; blocked exits
 author: Carl Mäsak
-created: 2012-07-07T22:15:24+02:00
+created: 2012-07-08T23:55:24+02:00
 ---
 I don't quite remember what I meant by "blocked exits" when I wrote the month
 plan... But let's improvise! Way I see it, it can mean two things. So we'll do
