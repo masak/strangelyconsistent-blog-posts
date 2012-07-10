@@ -77,7 +77,7 @@ structure is hopefully there.
 * [2012-07-07](http://strangelyconsistent.org/blog/july-7-saving-and-restoring): saving and restoring
 * [2012-07-08](http://strangelyconsistent.org/blog/july-8-blocked-exits): blocked exits
 * [2012-07-09](http://strangelyconsistent.org/blog/july-9-things-and-descriptions): things and descriptions
-* 2012-07-10: things which can be opened
+* [2012-07-10](http://strangelyconsistent.org/blog/july-10-2012-things-which-can-be-opened): things which can be opened
 * 2012-07-11: things which contain other things
 * 2012-07-12: platform things
 * 2012-07-13: things which you can read
