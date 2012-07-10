@@ -24,7 +24,8 @@ reflected over this via privmsg to jnthn today:
             failed.
     <masak> we've failed *because* we need to break encapsulation to get important
             result information out of the object.
-    <masak> it's the testing equivalent of the Internet meme "pics or it didn't happen".
+    <masak> it's the testing equivalent of the Internet meme "pics or it didn't
+            happen".
     <masak> black box testing naturally leads to a wider focus on sad-path testing,
             because every sad path corresponds to one way to validate, and is what 
             necessitates keeping state between calls.
@@ -32,7 +33,8 @@ reflected over this via privmsg to jnthn today:
 Maybe the right way to think about this is to engage in a kind of dialogue with
 the client (or yourself, as it were):
 
-    <dev> *why* do you want to use a getter afterwards to check that the car is open?
+    <dev> *why* do you want to use a getter afterwards to check that the car
+          is open?
     <client> because otherwise how will I know it actually is open?
     <dev> by testing whether it behaves as if it were open. what's particular about
           an open car? are there exceptions thrown now that weren't before?
