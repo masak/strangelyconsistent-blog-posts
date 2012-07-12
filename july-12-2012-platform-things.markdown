@@ -37,7 +37,7 @@ platforms are things you put other things *on*. That was the design I ended up
 with last year, and I think it'll hold up even this year.
 
 From the point of view of the game, even platformhood is a kind of containment
-relation, actually. A butterfly on a piedestal works much like a butterfly in a
+relation, actually. A butterfly on a pedestal works much like a butterfly in a
 car. So I can mostly just copy the tests that apply from yesterday, and make
 them work:
 
