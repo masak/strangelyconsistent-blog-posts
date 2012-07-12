@@ -79,7 +79,7 @@ structure is hopefully there.
 * [2012-07-09](http://strangelyconsistent.org/blog/july-9-things-and-descriptions): things and descriptions
 * [2012-07-10](http://strangelyconsistent.org/blog/july-10-2012-things-which-can-be-opened): things which can be opened
 * [2012-07-11](http://strangelyconsistent.org/blog/july-11-2012-things-which-contain-other-things): things which contain other things
-* 2012-07-12: platform things
+* [2012-07-12](http://strangelyconsistent.org/blog/july-12-2012-platform-things): platform things
 * 2012-07-13: things which you can read
 * 2012-07-14: hidden things which can be revealed
 * 2012-07-15: things which can be carried around
