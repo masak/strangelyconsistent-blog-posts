@@ -81,7 +81,7 @@ structure is hopefully there.
 * [2012-07-11](http://strangelyconsistent.org/blog/july-11-2012-things-which-contain-other-things): things which contain other things
 * [2012-07-12](http://strangelyconsistent.org/blog/july-12-2012-platform-things): platform things
 * [2012-07-13](http://strangelyconsistent.org/blog/july-13-2012-things-which-you-can-read): things which you can read
-* 2012-07-14: hidden things which can be revealed
+* [2012-07-14](http://strangelyconsistent.org/blog/july-14-2012-hidden-things-which-can-be-revealed): hidden things which can be revealed
 * 2012-07-15: things which can be carried around
 * 2012-07-16: things which are part of the scenery
 * 2012-07-17: getting things from the car (car, rope, flashlight)
