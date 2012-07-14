@@ -1,7 +1,7 @@
 ---
 title: July 14 2012 &#8212; hidden things which can be revealed
 author: Carl Mäsak
-created: 2012-07-13T23:14:40+02:00
+created: 2012-07-14T23:14:40+02:00
 ---
 So, here's the idea: there's no door in sight, but when you examine the grass,
 the door suddenly appears! Well, it was there all the time, but you couldn't
