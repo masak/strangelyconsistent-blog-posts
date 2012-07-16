@@ -48,9 +48,10 @@ clearing.
 
 Saving and restoring is usually a pain in games, because you have to capture
 all the game state and serialize it somehow. Since we're doing everything with
-events, our job is easier. We just save all the events, put them somewhere, and
-when we want to restore the game, we apply all the saved events on a fresh game
-engine.
+events, our job is easier. We just [save all the
+events](https://github.com/masak/crypt/commit/02ca38f7d6a2cf7cf42a777922283455be157796),
+put them somewhere, and when we want to restore the game, we apply all the
+saved events on a fresh game engine.
 
 (I didn't choose to save to file here, so a save doesn't persist between
 program runs. However, it's the principle I want to show here, and messing with
