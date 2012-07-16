@@ -28,7 +28,7 @@ And yes, I did run the tests this time.
 
 Finally, the sad path of examining an object: if you examine something that's
 simply not there, the game [tells you it's not
-there](https://github.com/masak/crypt/commit/015b292d311ebac11c70158deac916fcbda3d655).
+there](https://github.com/masak/crypt/commit/fcd3e8d0927d447907867137777cc0a6072ab464).
 Perhaps most interesting is to note that *the placing logic ends up in this
 commit*, not in the previous one. Why? Because due to the way we're only ever
 testing external reactions from the game, it's not until we test sad-path
