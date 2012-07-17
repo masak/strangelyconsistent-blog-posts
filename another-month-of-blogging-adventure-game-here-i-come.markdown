@@ -84,7 +84,7 @@ structure is hopefully there.
 * [2012-07-14](http://strangelyconsistent.org/blog/july-14-2012-hidden-things-which-can-be-revealed): hidden things which can be revealed
 * [2012-07-15](http://strangelyconsistent.org/blog/july-15-2012-things-which-can-be-carried-around): things which can be carried around
 * [2012-07-16](http://strangelyconsistent.org/blog/july-16-2012-things-which-are-part-of-the-scenery): things which are part of the scenery
-* 2012-07-17: getting things from the car (car, rope, flashlight)
+* [2012-07-17](http://strangelyconsistent.org/blog/july-17-2012-getting-things-from-the-car): getting things from the car (car, rope, flashlight)
 * 2012-07-18: finding the door in the grass (grass, bushes, door)
 * 2012-07-19: filling your car with leaves (trees, leaves)
 * 2012-07-20: putting the leaves in the basket (sign, basket, walls)
