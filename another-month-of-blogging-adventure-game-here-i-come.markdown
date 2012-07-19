@@ -86,7 +86,7 @@ structure is hopefully there.
 * [2012-07-16](http://strangelyconsistent.org/blog/july-16-2012-things-which-are-part-of-the-scenery): things which are part of the scenery
 * [2012-07-17](http://strangelyconsistent.org/blog/july-17-2012-getting-things-from-the-car): getting things from the car (car, rope, flashlight)
 * [2012-07-18](http://strangelyconsistent.org/blog/july-18-finding-the-door-in-the-grass): finding the door in the grass (grass, bushes, door)
-* 2012-07-19: filling your car with leaves (trees, leaves)
+* [2012-07-19](http://strangelyconsistent.org/blog/july-19-filling-your-car-with-leaves): filling your car with leaves (trees, leaves)
 * 2012-07-20: putting the leaves in the basket (sign, basket, walls)
 * 2012-07-21: it's too dark in here! (can't see, turn on the flashlight)
 * 2012-07-22: playing the hanoi game (walls, all the disks)
