@@ -33,7 +33,7 @@ bug, caused by hard-to-follow placement logic. Let's do better this year.
   completely used to it yet, it seems. Anyway, thank you, extensive test suite.
 
 * Now we put the flashlight and the rope in the car, and make them [be revealed when
-  we open it](https://github.com/masak/crypt/commit/fd3ee8ce59c858f6ef3972741997a38a3c20d967).
+  we open it](https://github.com/masak/crypt/commit/ae59ad95036c014d42b1539d0283eb1d18356b46).
 
 * I make sure that a `look` command [reveals the insides of
   things](https://github.com/masak/crypt/commit/ae59ad95036c014d42b1539d0283eb1d18356b46),
