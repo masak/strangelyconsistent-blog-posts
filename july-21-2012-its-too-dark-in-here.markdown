@@ -36,7 +36,7 @@ file is now 2485 lines long, but that's partly because it contains
 *everything*: game engine, crypt game, hanoi subgame, and tests for all of
 them. So there's some splitting up to do before the month is over.
 
-But there's also the fact that the `Game::Engine` class has 21 attributes,
+But there's also the fact that the `Adventure::Engine` class has 21 attributes,
 which is a bit much. I suspect it could easily be given a few inner classes to
 handle rooms and things separately, and that that would help combat the
 monolithic list of attributes. Luckily, such a refactor will be very
