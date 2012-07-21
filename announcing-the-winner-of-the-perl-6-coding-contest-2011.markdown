@@ -59,8 +59,8 @@ becomes apparent. The winner is...
 
 Edgar Gonzàlez i Pellicer! Congratulations!
 
-Please also give a warm round of applause to A Z &mdash; we don't have his
-actual name &mdash; for winning the second prize.
+Please also give a warm round of applause to A Z &mdash; these are az5112's
+initals; we never got the full name &mdash; for winning the second prize.
 
 Edgar, A Z; Both of you have been contacted by email about the Amazon books.
 
