@@ -16,7 +16,7 @@ Now to get the flashlight to work.
   room](https://github.com/masak/crypt/commit/e90ce36e75c3d845951f22490e93c5dbfb8916cb).
   Actually, it's not that simple. The flashlight can be switched on because
   it's a *light source*. And then it has to be actually on. And then it has
-  to be *in the room*, or in the player's adventure, which is conceptually
+  to be *in the room*, or in the player's inventory, which is conceptually
   in the room, too. Finally we have to tell the game engine that `use` has the
   particular meaning `switch on` for light sources. Phew!
 
