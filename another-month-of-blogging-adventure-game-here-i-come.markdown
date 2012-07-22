@@ -89,7 +89,7 @@ structure is hopefully there.
 * [2012-07-19](http://strangelyconsistent.org/blog/july-19-filling-your-car-with-leaves): filling your car with leaves (trees, leaves)
 * [2012-07-20](http://strangelyconsistent.org/blog/july-20-putting-the-leaves-in-the-basket): putting the leaves in the basket (sign, basket, walls)
 * [2012-07-21](http://strangelyconsistent.org/blog/july-21-2012-its-too-dark-in-here): it's too dark in here! (can't see, turn on the flashlight)
-* 2012-07-22: playing the hanoi game (walls, all the disks)
+* [2012-07-22](http://strangelyconsistent.org/blog/july-22-2012-playing-the-hanoi-game): playing the hanoi game (walls, all the disks)
 * 2012-07-23: being blocked by the fire (fire, walls)
 * 2012-07-24: fetching water (brook, water, helmet)
 * 2012-07-25: putting out the fire
