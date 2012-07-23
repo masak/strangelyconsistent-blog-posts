@@ -13,7 +13,7 @@ surprises. Nevertheless, I have two commits for you today as well.
 Now to get the flashlight to work.
 
 * If the flashlight has been switched on, it should [light up the
-  room](https://github.com/masak/crypt/commit/e90ce36e75c3d845951f22490e93c5dbfb8916cb).
+  room](https://github.com/masak/crypt/commit/bc2bb141e7ea50a526db00736814d6d39c6f0d4e).
   Actually, it's not that simple. The flashlight can be switched on because
   it's a *light source*. And then it has to be actually on. And then it has
   to be *in the room*, or in the player's inventory, which is conceptually
