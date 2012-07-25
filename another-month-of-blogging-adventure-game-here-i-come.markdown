@@ -92,7 +92,7 @@ structure is hopefully there.
 * [2012-07-22](http://strangelyconsistent.org/blog/july-22-2012-playing-the-hanoi-game): playing the hanoi game (walls, all the disks)
 * [2012-07-23](http://strangelyconsistent.org/blog/july-23-2012-being-blocked-by-the-fire): being blocked by the fire (fire, walls)
 * [2012-07-24](http://strangelyconsistent.org/blog/july-24-2012-fetching-water): fetching water (brook, water, helmet)
-* 2012-07-25: putting out the fire
+* [2012-07-25](http://strangelyconsistent.org/blog/july-25-2012-putting-out-the-fire): putting out the fire
 * 2012-07-26: doom and cavern collapse
 * 2012-07-27: triggering doom and dying (pedestal, butterfly, walls)
 * 2012-07-28: moving around III (movement synonyms)
