@@ -41,7 +41,7 @@ the rest of the design. I'm happy.
 I ran to jnthn (on IRC), waving my arms enthusiastically and shouting "closures
 are awesome because they give downstream the freedom to supply arbitrary code,
 while giving upstream the freedom to choose when to invoke it!" jnthn said
-everyone already knows this. So, um, well. OK. `:-)`
+everyone already knows this. So, um, well. OK. 哈哈
 
 Anyway, we're well positioned to implement the last room of the game tomorrow.
 Then the rest is just polishing and refactoring.
