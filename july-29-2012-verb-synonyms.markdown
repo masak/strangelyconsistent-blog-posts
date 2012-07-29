@@ -26,9 +26,10 @@ is some technical debt in there to repay.
   things](https://github.com/masak/crypt/commit/f1219e1c1ca8ad49099e4656c76d7377a900ffff)
   having to do with when things are visible or listed.
 * The game used to say "There is a car here.", but now it says "Your car is
-  parked here." Such thing-specific overridings are now handled through a
-  separate namespace in the `descriptions` file. Much cleaner than last year's
-  solution. Actually, the event-based approach is *forcing* many of these
+  parked here." Such thing-specific overridings [are now
+  handled](https://github.com/masak/crypt/commit/44ef4e38fa47a69830a54ed51f85b53c293ab56c)
+  through a separate namespace in the `descriptions` file. Much cleaner than last
+  year's solution. Actually, the event-based approach is *forcing* many of these
   "much cleaner" solutions, because it's harder to mix levels.
 
 Another example of the latter is the "remark" system &mdash; lots of
