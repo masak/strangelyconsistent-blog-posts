@@ -96,7 +96,7 @@ structure is hopefully there.
 * [2012-07-26](http://strangelyconsistent.org/blog/july-26-2012-doom-and-cavern-collapse): doom and cavern collapse
 * [2012-07-27](http://strangelyconsistent.org/blog/july-27-2012-triggering-doom-and-dying): triggering doom and dying (pedestal, butterfly, walls)
 * [2012-07-28](http://strangelyconsistent.org/blog/july-28-2012-moving-around-iii-movement-synonyms): moving around III (movement synonyms)
-* 2012-07-29: verb synonyms
+* [2012-07-29](http://strangelyconsistent.org/blog/july-29-2012-verb-synonyms): verb synonyms
 * 2012-07-30: tying up various loose ends
 * 2012-07-31: the finished game
 
