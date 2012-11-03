@@ -84,7 +84,7 @@ closures.
 
 It's the same principle: after the `f;` call has been conceptually replaced by
 `say $a;` this code should still remember its context, its origins, namely the
-macro body. The fact that `say $a;` doesn't print `"B... BOOOOM!", from the
+macro body. The fact that `say $a;` doesn't print `"B... BOOOOM!"`, from the
 variable in the mainline scope, is part of what's called *hygiene*. Hygiene
 means that just like with closures, bindings inside are isolated from bindings
 outside by default.
