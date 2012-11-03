@@ -76,7 +76,7 @@ heard about them before and was wondering whether they were any good.
 > which is way cool. They call this "metacircularity". Means you can
 > change anything you want. Don't mind the people who joke about all the
 > parentheses, they don't get it. Smalltalk is another magical language.
-> I'd recommend Sqeak as a great learning environment. It's completely
+> I'd recommend Squeak as a great learning environment. It's completely
 > reflective, which again means you can find and change anything.
 > 
 > A few further points of possible interest:

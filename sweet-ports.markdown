@@ -5,7 +5,7 @@ created: 2012-10-26T22:19:37+02:00
 ---
 I had invited jnthn over because I had invested in a bottle of nice port wine that I really wanted to try, but one whole bottle was too much for me. For both of us, during the course of an afternoon, it was about right.
 
-<img style="float: right" src="http://strangelyconsistent.org/blog/images/jnthn-porting.jpg" alt="jnthn holding a glass of port">
+<img style="float: right; border: solid 1px black; margin: 1em" src="http://strangelyconsistent.org/blog/images/jnthn-porting.jpg" alt="jnthn holding a glass of port">
 
 So that was the premise. Because we both like bad puns &mdash; jnthn admittedly more than I do &mdash; we decided to make it a "porting hackathon", where we would port some piece of software to Perl 6 while sipping the sweet beverage from Portugal.
 
@@ -74,3 +74,5 @@ Oh, it was pretty nifty. I've decided to provisionally like port wine after this
 Here's a picture of the finished bottle, along with all the tests passing:
 
 ![A picture of a screenshot and an empty bottle of port.](http://strangelyconsistent.org/blog/images/screenshot-and-bottle.jpg)
+
+Our finished module can be found [at Github](https://github.com/jnthn/json-path).
