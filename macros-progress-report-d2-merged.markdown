@@ -216,19 +216,19 @@ The other artifacts that have emerged since D1 are as follows:
 * A number of commits to the `nom` branch of Rakudo:
     * [can parse unquotes in quasis](https://github.com/rakudo/rakudo/commit/98591b486467b72f925d3cea0bcfa7155f6e313c)
     * [backpedal on throwing an exception](https://github.com/rakudo/rakudo/commit/1b9b70b1d0813cebd2b3d4dab2805be1d7abc13f)
-    * [\<statementlist\>, not \<EXPR\>](https://github.com/rakudo/rakudo/commit/30c0302b747a553b7f97191919930c06effe3575)
+    * [`<statementlist>`, not `<EXPR>`](https://github.com/rakudo/rakudo/commit/30c0302b747a553b7f97191919930c06effe3575)
     * [implement unquote splicing](https://github.com/rakudo/rakudo/commit/b7e189599c2787d7b3cbfb2865bbfb406fdc042f)
-    * [X::TypeCheck::MacroUnquote -> X::TypeCheck::Splice](https://github.com/rakudo/rakudo/commit/fc88876a1bc08eb6c5b39be4ae8b9f72d366c604)
-    * [throw X::TypeCheck::Splice everywhere](https://github.com/rakudo/rakudo/commit/7d10d1aae2288b9e7c9529c9899bd845ced808fc)
+    * [`X::TypeCheck::MacroUnquote` -> `X::TypeCheck::Splice`](https://github.com/rakudo/rakudo/commit/fc88876a1bc08eb6c5b39be4ae8b9f72d366c604)
+    * [throw `X::TypeCheck::Splice` everywhere](https://github.com/rakudo/rakudo/commit/7d10d1aae2288b9e7c9529c9899bd845ced808fc)
     * [make comment more precise](https://github.com/rakudo/rakudo/commit/e5b94e343b237fa644ccff2abb583f0331ea74ad)
     * [refactor](https://github.com/rakudo/rakudo/commit/e7ab9ace23569bb2d5fe5550288efb8c0cbacd4b)
     * [wrap macro-arg ASTs in thunks](https://github.com/rakudo/rakudo/commit/9bb7de6dbf77b29298dae64ed5707e08061f065a)
     * [unify macro code paths](https://github.com/rakudo/rakudo/commit/203f97e264e1c61e18a61163eef49bba03b806f1)
     * [make macro expansion ignore empty ASTs](https://github.com/rakudo/rakudo/commit/02688057bb7e44557c614155370cd57209733e1c)
 * A number of commits to the `nqp` project:
-    * [added QAST::Unquote](https://github.com/perl6/nqp/commit/1f54496f467ce76307afedb8e0992c1206aa7ea6)
-    * [added .evaluate_unquotes method to QAST nodes](https://github.com/perl6/nqp/commit/c2236072abf2f4d743f0b02d750fc5ac32b88f00)
-    * [add .evaluate_unquotes to BVal and Block](https://github.com/perl6/nqp/commit/2f7b14d66b5777f7f4d680cdbd787d284828c1f2)
+    * [added `QAST::Unquote`](https://github.com/perl6/nqp/commit/1f54496f467ce76307afedb8e0992c1206aa7ea6)
+    * [added `.evaluate_unquotes` method to QAST nodes](https://github.com/perl6/nqp/commit/c2236072abf2f4d743f0b02d750fc5ac32b88f00)
+    * [add `.evaluate_unquotes` to BVal and Block](https://github.com/perl6/nqp/commit/2f7b14d66b5777f7f4d680cdbd787d284828c1f2)
     * [shallow-clone nodes with kids](https://github.com/perl6/nqp/commit/bc734932e9f7a8b63938fcb8ea8d23a057cd596f)
 * Two more deliveries of the macros talk: one at French Perl Workshop in
   Strasbourg, and one at YAPC::Europe in Frankfurt.
