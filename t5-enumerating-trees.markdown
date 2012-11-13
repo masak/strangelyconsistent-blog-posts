@@ -137,7 +137,7 @@ does a good job of it in 1981, I bet the same approach would look even nicer in
 2012 Haskell. Heck, I bet the same approach would look quite elegant in 2012
 Perl 6.
 
-The other thing is that one of our non-contestants (he simply applied to late)
+The other thing is that one of our non-contestants (he simply applied too late)
 not only used an algorithm out of the fourth "The Art of Computer Programming"
 book, but found what he perceived to be a bug in same algorithm, and wrote an
 email to Donald Knuth about it! Well, it turned out that professor Knuth's
