@@ -7,7 +7,7 @@ For the third year in a row, let's write some Perl 6 contest code!
 
 <center><strong>The 2012 Perl 6 Coding Contest</strong></center>
 
-Perl 6 has had a great year, with its two implementations growing increasingly mature. Sometimes it's easy to forget all the progress that happens each month. Features and performance have improved all through the year. I think that will show in this year's entries.
+Perl 6 has had a great year, with its two major implementations growing increasingly mature. Sometimes it's easy to forget all the progress that happens each month. Features and performance have improved all through the year. I think that will show in this year's entries.
 
 So here's what's happening:
 
@@ -44,3 +44,5 @@ quite a bit of freedom to play around with various solutions.
 This time, the whole contest is running as a [GitHub repository](http://github.com/masak/p6cc2012). Easier than hosting zip files.
 
 Now sign up &mdash; you've nothing to lose, and books to win! Also, this is your chance to finally take a look at Perl 6. 哈哈
+
+*(Looking for previous years' tasks and solutions? Here they are: <a href='http://strangelyconsistent.org/blog/masaks-perl-6-coding-contest'>2010 tasks</a> and <a href='http://strangelyconsistent.org/p6cc2010/'>2010 solutions</a>. <a href='http://strangelyconsistent.org/blog/the-2011-perl-6-coding-contest'>2011 tasks</a> and <a href='http://strangelyconsistent.org/p6cc2011/'>2011 solutions</a>.)*
