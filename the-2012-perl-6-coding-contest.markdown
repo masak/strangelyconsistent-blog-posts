@@ -13,6 +13,8 @@ So here's what's happening:
 
 <center><strong>do five tasks, and you might win Amazon books worth &euro;100!</strong></center>
 
+**Addendum:** Thanks to an anonymous donor, we're proud to announce a *second* prize as well: Amazon books worth 100 USD! (Redeemable within a year of winning.)
+
 The contest starts *now*, today on 2012-12-14. It ends five weeks later, on 2013-01-18. Registration is open for two weeks, starting *now*. Just send an email to `cmasak@gmail.com` &mdash; saying "sign me up!" or even sending your Amazon wishlist so I'll know which books to buy you if you win.
 
 You might be curious about what you need to do to win. Here's an extract from the file [`rules.md`](https://github.com/masak/p6cc2012/blob/master/rules.md):
