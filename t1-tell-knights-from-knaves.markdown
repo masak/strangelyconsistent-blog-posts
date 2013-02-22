@@ -7,7 +7,7 @@ created: 2013-02-22T23:39:50+01:00
 * grondilu thinks of it and realizes the number of possibilities is not so large<br>
 &lt;grondilu&gt; .oO( 2**number_of_islanders  possibilities anyway )</code></div>
 
-And so, the time-honored tradition of reviewing p6cc solutions begins. Again.
+And so, the time-honored tradition of reviewing [p6cc](http://github.com/masak/p6cc2012#readme) solutions begins. Again.
 
 For our first task, we have the very human conundrum of figuring out who is telling the truth and who is lying. Fortunately, on the island of Smul, that's a much more tractable problem than in the real world.
 
@@ -89,6 +89,6 @@ In the literature, we find this problem as [XOR-satisfiability](https://en.wikip
 
 One contestant did it this way. Yay him. You should check out his solution.
 
-[Here are the solutions](https://github.com/masak/p6cc2012/tree/master/t1/review), and my reviews of same. Enjoy.
+[Here are the solutions](http://github.com/masak/p6cc2012/tree/master/t1/review), and my reviews of same. Enjoy.
 
 Next up: rectangle haikus, possibly the most fun I've ever had with a p6cc task.
