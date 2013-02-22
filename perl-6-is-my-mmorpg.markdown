@@ -18,7 +18,7 @@ getting up to speed, they simply have to start in one end and unwind the whole
 thing.
 
 &lt;Gpox&gt; It <em>is</em> complicated. There are occasional jokes about the
-<a href='http://upload.0x1011.org/files/LearningCurve.jpg'>learning curve</a>
+<a href='http://web.archive.org/web/20090718140949/http://upload.0x1011.org//files//LearningCurve.jpg'>learning curve</a>
 involved.
 
 &lt;jonalv&gt; Nowadays people have the wiki to help them get started as
