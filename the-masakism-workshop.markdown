@@ -44,6 +44,9 @@ with knowing my way around most of the `perldoc` pages and most of the special
 variables. Oh, and I probably have a slight advantage being fairly deeply
 involved in Perl 6 stuff, too.
 
+Anyway, I absolutely love teaching Perl. Five and six. So much so that I'd
+do it for free. So this is me doing it for free.
+
 As I write this, there are 13 participants signed up for the course. This is
 already twice as big as the typical Perl course I teach in a corporate setting.
 It's also a wide range of people; from relative newbies to people who could
