@@ -42,7 +42,7 @@ next blog post will appear sooner than that.
     within a reasonable span of time.
 
 I warmly recommend people to check out [the
-solutions](https://github.com/masak/p6cc2012/tree/master/t2/review) to this one. People are all over the place, coming up with ways to generate a rectangula haiku.
+solutions](https://github.com/masak/p6cc2012/tree/master/t2/review) to this one. People are all over the place, coming up with ways to generate a rectangular haiku.
 
 Some patterns recur, though. Let's break things down into subtasks and discuss
 them separately.
