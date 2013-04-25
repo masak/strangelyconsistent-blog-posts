@@ -48,7 +48,7 @@ Some patterns recur, though. Let's break things down into subtasks and discuss
 them separately.
 
 **Word lists**. Some contestants had their wordlists inlined in the code.
-Others had it in a separate file. Some stored part-of-speec information
+Others had it in a separate file. Some stored part-of-speech information
 together with the word, or syllable count.
 
 **Sentence structure**. Solutions are all across the spectrum, all the way from
