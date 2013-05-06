@@ -30,7 +30,7 @@ It worked well. Actually, it worked well beyond my expectations.
     * tadzik++ did an exercise and got a solution that I didn't expect. We
       agreed that a test was missing to force people to do the right thing,
       so he went ahead and added it.
-    * isBEKaml++ added hyperlinks between all the files.
+    * LlamaRider++ added hyperlinks between all the files.
     * grtodd++ made the subway map clickable.
     * choroba++ added hyperlinks to a file that I added later.
 
