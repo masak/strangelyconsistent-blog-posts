@@ -15,7 +15,7 @@ Over the years, Perl 6 users have seen a descending sequence of components being
 
 And people have been *talking* about taking the obvious next step with this: building a runtime, or retrofitting an existing runtime, that would serve 6model better.
 
-Today MoarVM is revealed. It's a VM for 6model.
+Today [MoarVM](http://github.com/moarvm/moarvm) is revealed. It's a VM for 6model.
 
 Imagine taking all the lessons learned about Perl 6 and VMs, and factoring them into a project like this. [jnthn's article](http://6guts.wordpress.com/2013/05/31/moarvm-a-virtual-machine-for-nqp-and-rakudo/) goes on to list all the things that MoarVM does:
 
