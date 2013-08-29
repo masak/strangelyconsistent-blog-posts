@@ -13,7 +13,7 @@ healthily occupied with things, and a big thanks to all people related to Perl
 (Or maybe I didn't specifically mean "the next
 *[p6cc](http://github.com/masak/p6cc2012#readme)* blog post", but just "the
 next blog post"? I wish I could make myself believe that. No, the real answer
-is that reviewing stuff takes time and effort, and my time and effort has been
+is that reviewing stuff takes time and effort, and my time and effort have been
 elsewhere lately.)
 
 Let's talk about crossing wires in elegant ways! Here, I'll let the description
