@@ -49,7 +49,7 @@ Ok, so. Just a few simple facts:
 
 Let's recap what we know by applying it to the code. There's the variable `$x`. We know we will find it in the static lexpad of the mainline, because it's declared on the top level and everything has a static lexpad. Does it also have a runtime lexpad? Yes, it does, because the mainline starts running after compilation is over. Will we find `$x` in *several* runtime lexpads? No, only the one.
 
-Now, we ask outselves the question: *which lexpad is `C.foo` referring to?*
+Now, we ask ourselves the question: *which lexpad is `C.foo` referring to?*
 
 "Of course, it's the runtime lexpad", we reply, innocent to the fact that the trap has already shut around us and there's no way out. See, it *has* to be the runtime lexpad, because the sane thing for the program to do is to print `OH HAI`, and that value is *certainly* stored in the runtime lexpad.
 
@@ -57,7 +57,7 @@ But no. It's not possible. It can't. There's no way. Because *roles are created 
 
 And there we are. The trap has now closed. There's no way to both (a) do what the user expects, and (b) keep the internal model nice and free of weird exceptions.
 
-Since we like (a), we ditch (b)) and create an exception in Rakudo. It's called a **fixup**, it's installed during role creation, and it makes sure that whenever the block surrounding the role is entered, the role rebinds its `OUTER` to that block's fresh lexpad.
+Since we like (a), we ditch (b) and create an exception in Rakudo. It's called a **fixup**, it's installed during role creation, and it makes sure that whenever the block surrounding the role is entered, the role rebinds its `OUTER` to that block's fresh lexpad.
 
 Simple it ain't. Nor is it pretty. But it makes the user happy.
 
