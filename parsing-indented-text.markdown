@@ -98,6 +98,10 @@ This requires a slight amending of `TOP`:
 
 The logic in `line` to create new suites with new indents:
 
+    # ^^ (<{ "\\x20" x TABSTOP }>*) (\h*) (\N*) $$ \n?
+
+    my $line = ~$2;
+
     if $new_indent > indent() {
         my $new_suite = Suite.new;
         add_to_current_suite($new_suite);
@@ -177,6 +181,8 @@ So we introduce a new exception.
     class PartialIndent is Exception {}
 
 And a condition that checks for this:
+
+    # ^^ (<{ "\\x20" x TABSTOP }>*) (\h*) (\N*) $$ \n?
 
     my $partial_indent = ~$1;
     
