@@ -140,9 +140,9 @@ We've handled indenting and creating new suites nicely, but [what about de-inden
 
 Easily fixed with an `elsif` case in our `line` regex:
 
-   elsif $new_indent < indent() {
-        decrease_indent;
-   }
+    elsif $new_indent < indent() {
+         decrease_indent;
+    }
 
 And a convenience routine:
 
