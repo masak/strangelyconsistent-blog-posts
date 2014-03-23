@@ -13,14 +13,12 @@ Secondly, I'll now recreate my steps in creating this module. Each section will 
 
 We want to be able to [handle indentation *at all*](https://github.com/masak/text-indented/commit/08bfb4fd42113774a635da81074728a2afcca2c4).
 
-    {
         my $input = q:to/EOF/;
         Level 1
             Level 2
         EOF
     
         parses_correctly($input, 'single indent');
-    }
 
 Well, that's easy. This grammar will do that:
 
@@ -32,14 +30,12 @@ Well, that's easy. This grammar will do that:
 
 But there are some indent jumps that we're not allowed to make. Anything that indents more than one step at a time, basically. [Let's check for that](https://github.com/masak/text-indented/commit/a1609e603dd5062c3a93e6d5d8219c82b533d8ab).
 
-    {
         my $input = q:to/EOF/;
         Level 1
                 Level 3!
         EOF
     
         fails_with($input, Text::Indented::TooMuchIndent);
-    }
 
 This takes a little more code to fix. We declare an exception, start parsing lines, and separate each line into indent, extra whitespace, and the rest of the line. Finally we check the line's indent against the current indent &mdash; mediated by the contextual variable `@*SUITES`. You'll see where I'm going with this in a minute.
 
@@ -72,7 +68,6 @@ This takes a little more code to fix. We declare an exception, start parsing lin
 
 Having laid the groundworks, let's get our hands dirty. We want the content to end up, line by line, [on the right scoping level](https://github.com/masak/text-indented/commit/b3e390b16ea5ef09fb2e0ba0c1eaabdf8f312c81).
 
-    {
         my $input = q:to/EOF/;
         Level 1
             Level 2
@@ -84,7 +79,6 @@ Having laid the groundworks, let's get our hands dirty. We want the content to e
         is $root.items.elems, 2, 'two things were parsed:';
         isa_ok $root.items[0], Str, 'a string';
         isa_ok $root.items[1], Text::Indented::Suite, 'and a suite';
-    }
 
 We need a `Suite` (term borrowed from Python) to contain the indented lines:
 
@@ -123,7 +117,6 @@ For all this, I had to define some convenience routines:
 
 We've handled indenting and creating new suites nicely, but [what about de-indenting](https://github.com/masak/text-indented/commit/3f9b71b7a8f4c0f35cc1f0c97d4bad898bcaa227)?
 
-    {
         my $input = q:to/EOF/;
         Level 1
             Level 2
@@ -136,7 +129,6 @@ We've handled indenting and creating new suites nicely, but [what about de-inden
         isa_ok $root.items[0], Str, 'a string';
         isa_ok $root.items[1], Text::Indented::Suite, 'a suite';
         isa_ok $root.items[2], Str, 'and a string';
-    }
 
 Easily fixed with an `elsif` case in our `line` regex:
 
@@ -152,7 +144,6 @@ And a convenience routine:
 
 Indenting multiple steps at a time isn't allowed... but [de-indenting multiple steps](https://github.com/masak/text-indented/commit/4ee499aace9b6110c3dce23bcbb43708b7ddad87) is. (This may actually be the strongest point of this kind of syntax. It corresponds to the `} } }` or `end end end` case of languages with explicit block delimiters, and is arguably neater.)
 
-    {
         my $input = q:to/EOF/;
         Level 1
             Level 2
@@ -165,7 +156,6 @@ Indenting multiple steps at a time isn't allowed... but [de-indenting multiple s
     
         is $root.items.elems, 3, 'three things on the top level';
         is $root.items[1].items[1].items.elems, 2, 'two lines on indent level 3';
-    }
 
 Oh, but we only need to change one line in the implementation to support this:
 
@@ -175,14 +165,12 @@ Oh, but we only need to change one line in the implementation to support this:
 
 Now for some random sins. You're not supposed to [indent partially](https://github.com/masak/text-indented/commit/243291ba31e2a77b89bd47c33aadc14cd0dd8366), a non-multiple of the indent size.
 
-    {
         my $input = q:to/EOF/;
         Level 1
               Level 2 and a half!
         EOF
     
         fails_with($input, Text::Indented::PartialIndent);
-    }
 
 So we introduce a new exception.
 
@@ -199,13 +187,11 @@ And a condition that checks for this:
 
 Secondly, [you're not meant to indent the first line](https://github.com/masak/text-indented/commit/8b21fc63b18707b3f2bf1b7700b325cf7607df80); it has to be at indentation level 0.
 
-    {
         my $input = q:to/EOF/;
             Level 2 already on the first line!
         EOF
     
         fails_with($input, Text::Indented::InitialIndent);
-    }
 
 We introduce another exception for that.
 
