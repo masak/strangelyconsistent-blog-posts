@@ -39,7 +39,7 @@ Ok, so. Just a few simple facts:
 
 * **Blocks are linked through `OUTER` links.** A small block nested inside a larger block has the larger block as its `OUTER`. More precisely, it's the lexpads that are linked. I think the literature refers to these as "parent" blocks, but in Perl 6 we taboo that word and use `OUTER` for lexical lookup (and `CALLER` for dynamic lookup).
 
-* **There's often more than one lexpad per block.** This one is hard to swallow. But think of a recursive factorial function: `sub fac($N) { $N ?? fac($N - 1) * $N !! 1 }`. As this function calls itself, it's going to need a fresh lexpad with each call. (Or it'll clobber the distinct `$N` values. Let's call these lexpads *runtime lexpads*.
+* **There's often more than one lexpad per block.** This one is hard to swallow. But think of a recursive factorial function: `sub fac($N) { $N ?? fac($N - 1) * $N !! 1 }`. As this function calls itself, it's going to need a fresh lexpad with each call. (Or it'll clobber the distinct `$N` values.) Let's call these lexpads *runtime lexpads*.
 
 * **A block always has a static lexpad, and then one or more runtime lexpads.** Consider this code: `class C { method foo { my $x = 42; method bar { say $x } } }; C.bar;`. In Rakudo, it prints `(Any)`, not 42 as you might think. Why not 42? Because `C.foo` has never run. In fact, the `(Any)` value of `$x` is coming from `C.foo`'s static lexpad, because that's the only lexpad `C.foo` has. (Interesting historical note: it took us a while to get this right in Rakudo. Used to be you could make variable lookups that *didn't* reach the static lexpad, but instead caused a Null PMC Access or similar. Ah, the pain.)
 
