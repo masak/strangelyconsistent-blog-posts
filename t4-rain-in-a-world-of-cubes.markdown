@@ -183,7 +183,7 @@ Well, I do want to stress that all five contestants made brave efforts. But for
 one reason or another, one of the five programs ended up especially correct.
 
 Check out [the
-reviews](https://github.com/masak/p6cc2012/tree/master/t4/reviews) for details.
+reviews](https://github.com/masak/p6cc2012/tree/master/t4/review) for details.
 
 ## ...no, wait
 
