@@ -85,7 +85,7 @@ Which brings us to the last, perhaps most important question. What's left for Pe
 
 For years I wouldn't go near that question. Just working along, head looking down at the current sub-projects, making Perl 6 more useful to myself and hoping that was enough. But my recent visit to FOSDEM made me realize that some kind of production release is actually within reach &mdash; say, a few years away &mdash; and a focused effort to reach a releasable state by some criteria would be highly useful for us and for others.
 
-So here are my for criteria. This is what Perl 6 needs to be ready for the world.
+So here are my four criteria. This is what Perl 6 needs to be ready for the world.
 
 * **Features**. Slightly simplified, this is what we've been working on since the Pugs days. [We are doing well](http://perl6.org/compilers/features) on features. There's not much I feel is missing nowadays from the core language. It's a pleasant language to use and to express thoughts in. There are bugs, sure, but with each month that passes, those bugs are becoming less frequent and less serious.
 
