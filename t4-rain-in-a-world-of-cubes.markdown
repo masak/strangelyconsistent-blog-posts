@@ -75,7 +75,7 @@ their programs return odd results.
     X.X
     XXX
 
-Let me explain the above picture. In order to test the five entrants against
+Let me explain the above picture. In order to test the four entrants against
 odd cases, I wrote a small program that builds a cube world from the above
 syntax. It only describes a cross-section; and so walls in the depth direction
 are automatically added. In other words, the above depicts a sealed box with no
@@ -179,8 +179,8 @@ something very tangible: concrete cases.
 ## Only one champion still standing
 
 Only one of the programs passes all of the above tests with flying colors.
-Well, I do want to stress that all five contestants made brave efforts. But for
-one reason or another, one of the five programs ended up especially correct.
+Well, I do want to stress that all four contestants made brave efforts. But for
+one reason or another, one of the four programs ended up especially correct.
 
 Check out [the
 reviews](https://github.com/masak/p6cc2012/tree/master/t4/review) for details.
