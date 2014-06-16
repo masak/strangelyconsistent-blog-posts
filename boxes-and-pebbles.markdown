@@ -51,8 +51,9 @@ one of the smallest answers to the problem.
 > In each move we are allowed to take two pebbles from a box we choose, throw
 > away one of the pebbles, and put the other pebble in another box we choose.
 
-    > sub add($c, $to, $count) { my @boxes = $c.boxes; @boxes[$to] += $count; conf @boxes }; Nil
-    > sub remove($c, $from, $count) { my @boxes = $c.boxes; @boxes[$from] -= $count; conf @boxes }; Nil
+    > sub but(@list, &act) { my @new = @list; &act(@new); @new }
+    > sub add($c, $to, $count) { conf $c.boxes.&but(*.[$to] += $count) }; Nil
+    > sub remove($c, $from, $count) { conf $c.boxes.&but(*.[$from] -= $count) }; Nil
     >
     > sub move($c, $from, $to) { $c.&remove($from, 2).&add($to, 1) }; Nil
     > sub moves-from($c, $from) { (move($c, $from, $_) for ^n($c)) }; Nil
