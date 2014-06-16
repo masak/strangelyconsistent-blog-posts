@@ -30,7 +30,7 @@ with REPL interaction.
 > nonnegative number of pebbles.
 
     $ perl6
-    > class Conf { has @.boxes where *.all >= 0; method gist { "[{self.boxes.fmt}]" } }
+    > class Conf { has @.boxes where *.all >= 0; method gist { "[$.boxes]" } }
     > sub conf(@boxes) { Conf.new(:@boxes) }; Nil
     > sub n(Conf $c) { $c.boxes.elems }; Nil
 
