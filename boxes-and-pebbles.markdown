@@ -34,6 +34,10 @@ with REPL interaction.
     > sub conf(@boxes) { Conf.new(:@boxes) }; Nil
     > sub n(Conf $c) { $c.boxes.elems }; Nil
 
+I was a bit saddened to learn that the `where` clause on the attribute isn't
+enforced in Rakudo. There's now [an RT
+ticket](https://rt.perl.org/Ticket/Display.html?id=122109) about that.
+
 The `Nil` at the end of some lines is to quiet inconsequential or repetitive
 output from the REPL.
 
