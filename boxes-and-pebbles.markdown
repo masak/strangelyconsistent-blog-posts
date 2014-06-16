@@ -125,7 +125,7 @@ reduces the net amount of pebbles.
 > become solvable when an additional pebble is added to a box, no matter which
 > box is chosen.
 
-    > sub add-pebble($c, $to) { my @boxes = $c.boxes; @boxes[$to] += 1; conf @boxes }; Nil
+    > sub add-pebble($c, $to) { conf $c.boxes.&but(*.[$to] += 1) }; Nil
     > sub add-pebble-anywhere($c) { (add-pebble($c, $_) for ^n($c)) }; Nil
     > 
     > add-pebble-anywhere(conf [2, 0])
