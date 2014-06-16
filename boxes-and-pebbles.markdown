@@ -259,7 +259,7 @@ Ok, that turns out to be true. How about in the other direction?
     .Counterexample: [0 1]
 
 This is why QuickCheck-based testing is great; it not just tells us that
-something fails, it also tells gives us a *counterexample* by which we can see
+something fails, it also gives us a *counterexample* by which we can see
 clearly *how* and *why* it fails. In this case, that 1 in there is not enough
 to save the hostage. Nor is it enough if that box gets another pebble.
 
