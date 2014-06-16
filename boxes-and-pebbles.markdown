@@ -328,14 +328,14 @@ And that's the answer.
 [here](http://egmo2014.tubitak.gov.tr/sites/default/files/solutions-day2.pdf),
 problem 5.)
 
-## Enumerating all solutions
+## Enumerating all answers
 
 We might consider ourselves having solved the problem completely, but it feels
 a bit weird to leave it at that. Can't we get a list of all the answers too?
 
 I started writing a custom recursive solution, but ended up recognizing what I
 was doing from the output I was getting. (And from the fact that the number of
-solutions of each size led me to [this OEIS
+answers of each size led me to [this OEIS
 sequence](http://oeis.org/A000041).)
 
 What we're looking for is really a kind of integer partitions. That makes
@@ -365,42 +365,42 @@ with zeroes at the end.
     sub pad(@list, $size) { [@list, 0 xx ($size - @list.elems)] }
     sub all-answers($n) { (.reverse.&double.&pad($n) for partitions($n - 1)) }
 
-Note by the way that these solutions are "symmetry broken". For each solution,
+Note by the way that these answers are "symmetry broken". For each solution,
 the order of the boxes is immaterial to the problem, so all permutations of
-boxes are also viable solutions. So picking a canonical order and sticking with
+boxes are also viable answers. So picking a canonical order and sticking with
 it makes the output a lot smaller without missing anything essential.
 
-Finally, we print the solutions. Sorting is not necessary, just esthetic.
+Finally, we print the answers. Sorting is not necessary, just esthetic.
 
     sub array-cmp(@xs, @ys) { [||] @xs Z<=> @ys }
 
     for 1..* -> $n {
         my @answers = all-answers($n).sort(&array-cmp);
-        say "{@answers.elems} solutions of size $n:";
+        say "{@answers.elems} answers of size $n:";
         say "  ", .&conf for @answers;
     }
 
 This is how they look. These are just the first seven iterations; it goes on
 for a while.
 
-    1 solutions of size 1:
+    1 answers of size 1:
       [0]
-    1 solutions of size 2:
+    1 answers of size 2:
       [2 0]
-    2 solutions of size 3:
+    2 answers of size 3:
       [2 2 0]
       [4 0 0]
-    3 solutions of size 4:
+    3 answers of size 4:
       [2 2 2 0]
       [4 2 0 0]
       [6 0 0 0]
-    5 solutions of size 5:
+    5 answers of size 5:
       [2 2 2 2 0]
       [4 2 2 0 0]
       [4 4 0 0 0]
       [6 2 0 0 0]
       [8 0 0 0 0]
-    7 solutions of size 6:
+    7 answers of size 6:
       [2 2 2 2 2 0]
       [4 2 2 2 0 0]
       [4 4 2 0 0 0]
