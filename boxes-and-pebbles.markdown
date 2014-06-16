@@ -413,6 +413,10 @@ This problem is now officially flushed out of my system. I like how Perl 6 rose
 to the challenge of helping me solve it. I'm also positively surprised by the
 "feel" of doing QuickCheck testing. Gotta do more of that.
 
+I worked under a self-imposed restriction that things written in the REPL ought
+to fit on one line. It made me reach for ways to chunk ideas into functions,
+which I think ended up bringing out the intent of each step a bit better.
+
 Finally, although I knew it from before, junctions and hyperops and ranges and
 list comprehensions and functions and metaoperators and custom operators and
 lazy lists... they all conspire to make problem solving and exploratory
