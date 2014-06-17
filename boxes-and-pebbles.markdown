@@ -51,7 +51,7 @@ one of the smallest answers to the problem.
 > In each move we are allowed to take two pebbles from a box we choose, throw
 > away one of the pebbles, and put the other pebble in another box we choose.
 
-    > sub but(@list, &act) { my @new = @list; &act(@new); @new }
+    > sub but(@list, &act) { my @new = @list; &act(@new); @new }; Nil
     > sub add($c, $to, $count) { conf $c.boxes.&but(*.[$to] += $count) }; Nil
     > sub remove($c, $from, $count) { conf $c.boxes.&but(*.[$from] -= $count) }; Nil
     >
@@ -93,26 +93,28 @@ For example, if we did this:
 
 Then the tree search that happens in the background is this:
 
-    [4, 0, 0]
-        [3, 0, 0]
-            [2, 0, 0]
-                [1, 0, 0]
-            [1, 1, 0]
-            [1, 0, 1]
-        [2, 1, 0]
-            [1, 1, 0]
-            [0, 2, 0]
-                [1, 0, 0]
-                [0, 1, 0]
-                [0, 0, 1]
-            [0, 1, 1]
-        [2, 0, 1]
-            [1, 0, 1]
-            [0, 1, 1]
-            [0, 0, 2]
-                [1, 0, 0]
-                [0, 1, 0]
-                [0, 0, 1]
+    [4 0 0]
+        [3 0 0]
+            [2 0 0]
+                [1 0 0]
+                [0 1 0]
+                [0 0 1]
+            [1 1 0]
+            [1 0 1]
+        [2 1 0]
+            [1 1 0]
+            [0 2 0]
+                [1 0 0]
+                [0 1 0]
+                [0 0 1]
+            [0 1 1]
+        [2 0 1]
+            [1 0 1]
+            [0 1 1]
+            [0 0 2]
+                [1 0 0]
+                [0 1 0]
+                [0 0 1]
 
 ...and `is-solvable` concludes that no matter how it moves the pebbles, it
 always ends up with a zero *somewhere*, so this configuration isn't solvable,
@@ -224,7 +226,7 @@ hoping it would catch all relevant cases.
 
     sub random-conf {
         my $n = (0..5).pick;
-        conf [random-box xx $n];
+        conf [random-box() xx $n];
     }
 
 Next up, a function that tests a certain property on a lot of random
@@ -416,6 +418,8 @@ for a while.
       [6 4 0 0 0 0]
       [8 2 0 0 0 0]
       [10 0 0 0 0 0]
+
+## So, it has come to this
 
 This problem is now officially flushed out of my system. I like how Perl 6 rose
 to the challenge of helping me solve it. I'm also positively surprised by the
