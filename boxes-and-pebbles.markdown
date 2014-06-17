@@ -421,6 +421,10 @@ for a while.
 
 ## So, it has come to this
 
+I put all the code from this blog post [in a
+gist](https://gist.github.com/masak/f865b7d9dd33e535b501) if anyone wants to
+play with it.
+
 This problem is now officially flushed out of my system. I like how Perl 6 rose
 to the challenge of helping me solve it. I'm also positively surprised by the
 "feel" of doing QuickCheck testing. Gotta do more of that.
