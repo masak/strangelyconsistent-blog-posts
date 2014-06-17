@@ -187,8 +187,16 @@ above gets trimmed to this:
         [2, 0, 1]
             [0, 1, 1]
 
+Changing the literal `2` to `3` in the function `moves` (in recognition of the
+fact that the bottom pebble never figures in a viable move) cuts the tree down
+even further:
+
+    [4, 0, 0]
+        [2, 1, 0]
+        [2, 0, 1]
+
 I noticed the pattern that any possible answer configuration I could come up
-with had the property that there was exactly one more hostage than there was
+with had the property that there was exactly one more hostage than there were
 heroes.
 
     > sub one-more-hostage-than-heroes($c) { hostages($c) == heroes($c) + 1 }; Nil
