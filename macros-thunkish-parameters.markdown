@@ -43,7 +43,7 @@ This is less about "OMG, `infix:<||>` should be defined in user space" (which ma
 
 There are also some thunks that we can't easily define as subroutines: statement-modifying `if` and `for`, attribute defaults, and parameter defaults. These are all too tied into the Perl 6 grammar (as "special forms" rather than expressions), and so we can't really reach them. But one can still imagine a statement-mod `for` being defined like that:
 
-    sub statement_mod_loop:sym<for>(THUNK $lhs, $rhs) { ... }
+    sub statement_mod_loop:sym<for>(THUNK $statement, @values) { ... }
 
 ## Implementation
 
