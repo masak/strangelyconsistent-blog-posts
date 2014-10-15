@@ -68,7 +68,7 @@ That makes the example feel *real* to me. Likely the mechanism for this would be
 
 This type of examples inhabits a Goldilocks zone where the macros have to be not-too-simple (because then a frothy mix of subs, dynamic variables, and exception handling would work), but also not too much like a proper language (because then slangs would rush in and soak up the use cases). I think any more complicated than this and it'd be a slang. In fact, I don't mind if there's a nice, sliding scale, so that you can essentially evolve a cluster of macros of this type into a slang if you want.
 
-## Grammars to it bottom-up
+## Grammars do it bottom-up
 
 I don't know what to make of the fact that in our Perl 6 grammars we've ended up with a solution where
 
