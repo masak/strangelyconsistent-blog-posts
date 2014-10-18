@@ -21,7 +21,7 @@ The concept of "TTIAR" says that there is a rule the code author cannot break: i
 
     "will " "concatenate?";  Ⓣ"will " Ⓞ<<<PARSE ERROR>>>
 
-This is all good and well, and works to our advantage. TimToady has described it on several occasions as Perl 6's "self-clocking" mechanism: if a term shows up when an operator was expected, we give a parse error. Often we're able to give a more specific parse error than just "Confused" &mdash; in fact, many of the excellent errors we give are improved versions of the TTIAR error.
+This is all good and well, and works to our advantage. TimToady has described it on several occasions as Perl 6's "self-clocking" mechanism: if a term shows up where an operator was expected, we give a parse error. Often we're able to give a more specific parse error than just "Confused" &mdash; in fact, many of the excellent errors we give are improved versions of the TTIAR error.
 
     # excerpt from inside of the `panic` method in STD.pm6
     if self.lineof($startpos) != self.lineof($endpos) {
