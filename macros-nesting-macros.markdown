@@ -107,5 +107,5 @@ Identified in a [previous post](http://strangelyconsistent.org/blog/macros-progr
 
 * The `{{{ }}}` syntax being universally hated
 * Quasi slices only being usable in term position
-* Macro paramters/operands being restricted to expressions
+* Macro parameters/operands being restricted to expressions
 * Manipulexity of program elements

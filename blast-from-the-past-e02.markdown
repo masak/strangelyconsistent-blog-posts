@@ -10,7 +10,7 @@ After being a bystander for a few hours, I coulndn't restrain myself anymore: I 
 - We don't do `$ARGS prompts("Search? ")` anymore, but there's a nice `&prompt` function which I used instead, together with a `while` loop.
 - The `&show` function now uses `gather/take`, rather than printing directly.
 - Also, I avoided the statement-modifying mess from the original E02 `&show` code.
-- Also, E02's `&show` makes a point of using a slurpy `@_` rather than naming the paramters. I don't. (Neither does SF.)
+- Also, E02's `&show` makes a point of using a slurpy `@_` rather than naming the parameters. I don't. (Neither does SF.)
 - It just makes sense to use a `given/when` construct in the `&insert` function. To its credit, E02 tantalizingly hints of it, but then does a MIB mind-wipe. (You don't recall that bit? Oh well...)
 - In the same function, E02 puts `undef` to initiate the child nodes to some empty value. Both SF and I independently realized that just any undefined value won't work if `&insert` is to have `%tree` in the signature, because `%tree` only binds to an `Associative` value. SF solved it by putting `Hash` (an undefined `Hash` type object) in the child nodes, and changed it to `Hash.new` in the later version. I used `{}`, which should be equivalent to `Hash.new`, but IMHO more idiomatic.
 - The whole traits business hadn't solidified in 2002, but I believe that the end result is both more realiable, more useful, and prettier. You'll have to judge for yourself.
