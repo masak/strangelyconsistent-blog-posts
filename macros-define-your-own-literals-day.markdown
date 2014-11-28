@@ -97,6 +97,12 @@ with some degree of bending the implementation. FROGGS++ is showing the way
 with [`Slang::Tuxic`](https://github.com/FROGGS/p6-Slang-Tuxic) &mdash; let's
 do something similar with these.
 
+*Edit: not one minute after publishing this post, I'm made aware of
+[`Slang::SQL`](https://github.com/tony-o/perl6-slang-sql) on Github. It's not
+quite there yet, but it's working its way toward the ideal I have in mind.
+Nice! Ok, so now I only have to rally the people to building `Slang::HTML`.
+哈哈*
+
 Signing off with this thought:
 
 > Any sufficiently complicated syntax highlighter for Perl 6 contains an ad hoc,
