@@ -67,7 +67,7 @@ In other words, the one spec'd example we have of the `is parsed` trait runs on 
 
 Here's what I think is going on. In the latter half of the naughties, we got amazing STD parser technology. We basically figured out how Perl 6 is parsed. The macro spec (and the `is parsed` trait) largely comes before that. The Perl 6 chorus today sings about *grammars*, and sometimes action methods. But the `is parsed` trait still mumbles about its regexes, making itself a bit of an embarrassment, to be honest. It hasn't gotten the memo that all the rest of us are doing structured language parsing, not just text munging.
 
-What if when I declared a macro, I got the option to play the same game as `if` and `for` and the other big cats? What if I got to effectively extend the current Perl 6 grammar being parsed? (This is also the goal of slangs.) I think a lot of the problems would be solved simply with addition.
+What if when I declared a macro, I got the option to play the same game as `if` and `for` and the other big cats? What if I got to effectively extend the current Perl 6 grammar being parsed? (This is also the goal of slangs.) I think a lot of the problems would be solved simply with this addition.
 
 ## Implementation
 
