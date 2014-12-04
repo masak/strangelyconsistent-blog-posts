@@ -20,8 +20,8 @@ build a... [SPACESHIP!](https://www.youtube.com/watch?v=7TYJyCCO8Dc)
 Today's episode brings you [vanviegen's macro
 proposal](https://github.com/jashkenas/coffeescript/pull/3171) from our friends
 over at the CoffeeScript world. You should read the OP in that one, but as a
-public service, I will also translate all the Coffee code snippets into
-Highly Plausible Perl 6.
+public service, I will also translate <del>all</del><ins>some of</ins> the
+Coffee code snippets into Highly Plausible Perl 6.
 
     # optionally compiled debug info
     macro debug(*@args) {
