@@ -87,7 +87,7 @@ I'll try to be more clear, or at least less circumscript, in what follows.
 
 But I also think I've figured out something about templating syntax.
 
-> *All templating syntax sucks.*
+> *All templating syntax sucks.*<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&mdash; masak's Deplorable Truth About Templating Syntax
 
 It doesn't matter what you do: your templating syntax is going to suck. The
