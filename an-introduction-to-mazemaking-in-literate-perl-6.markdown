@@ -3,7 +3,7 @@ title: An introduction to maze-making (in Literate Perl 6)
 author: Carl Mäsak
 created: 2009-09-01T23:55:00+02:00
 ---
-When I was younger and programmed in BASIC, there were some programs I keptcoming back to, writing them many times over, each time with small variations. It was a part of my autodidactic journey towards programmerhood — understanding algorithms, patterns, code smells and coding common sense by writing things over and over again.
+When I was younger and programmed in BASIC, there were some programs I kept coming back to, writing them many times over, each time with small variations. It was a part of my autodidactic journey towards programmerhood — understanding algorithms, patterns, code smells and coding common sense by writing things over and over again.
 
 One particular type of program I wrote was a program that drew [labyrinths](http://en.wikipedia.org/wiki/Labyrinth).
 
