@@ -5,9 +5,10 @@ created: 2015-02-15T00:15:49+01:00
 ---
 It started with a mini-challenge on the #perl6 channel.
 
-    <masak> today's mini-challenge: a 4x4 grid has 24 internal walls. in the power set
-            of these, some of the members are "mazes", by definition grids with a unique
-            path between every two squares. how many mazes exist?
+    <masak> today's mini-challenge: a 4x4 grid has 24 internal walls. in the
+            power set of these, some of the members are "mazes", by definition
+            grids with a unique path between every two squares. how many mazes
+            exist?
 
 For example, here are four randomly selected solution mazes:
 
@@ -127,7 +128,8 @@ I also uncovered [a string-handling bug](https://rt.perl.org/Ticket/Display.html
 
 [Bug still open](https://rt.perl.org/Ticket/Display.html?id=123602) as of this writing, looking for someone willing to tackle a ropey problem.
 
-    <jnthn> Too bad it gets the wrong answer, rather than getting into an infinite loop
+    <jnthn> Too bad it gets the wrong answer, rather than getting into an
+            infinite loop
     <jnthn> Then we coulda said it had enough rope to hang itself...
 
 I didn't see the error of my ways until [Mouq++ actually dug up](http://irclog.perlgeek.de/perl6/2015-01-15#i_9947670) a few mazes that my algorithm didn't produce. Common to all these mazes was that they had "corners" in the maze: points where a single wall chain branched out in two different directions. Here, have a few examples.
