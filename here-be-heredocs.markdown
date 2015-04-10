@@ -190,7 +190,7 @@ The problem is perhaps a little easier to see if the constant declaration is re-
         to boldly go where no one has gone before.
         INTRO
 
-I get that there are good reasons for disallowing the above two constructions. It's just that... I don't know, it feels slightly unfair. Heredocs are very nice and work well, constants are very nice and work well. If you combine them, the result ought to be twice as nice and also work well. But it doesn't.
+I get that there are good reasons for disallowing the above two constructions. It's just that... I don't know, it feels slightly unfair. Heredocs are very nice and work well, constants are very nice and work well. If you combine them, the result ought to be twice as nice and also work well. But it isn't, and it doesn't.
 
 In the case of de-indentation of interpolated variables, it was more of a clear-cut case of writing a bit more compiler code to DWIM things for the user. In this case... the stakes are higher. Because if the above were to work, we'd have to create an exception to one-pass parsing, something that Perl 6 values very highly.
 
