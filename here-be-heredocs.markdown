@@ -161,7 +161,7 @@ We ended up having the first model in Rakudo for a while, and I argued for the s
 
 In the end, timotimo++ implemented the second model, and all was well. You won't get de-indentation warnings from inside your interpolated variables.
 
-...Furthermore, as a nice bonus, the constant string fragments can actually be de-indented at compile-time! Because they're constant, and known at compile time. Under the former model we couldn't do that, since the entire string wasn't known until that point in the code at runtime (in the general case).
+...Furthermore, as a nice bonus, the constant string fragments can actually be de-indented at compile time! Because they're constant, and known at compile time. Under the former model we couldn't do that, since the entire string wasn't known until that point in the code at runtime (in the general case).
 
 ## The limits of sanity
 
