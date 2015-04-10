@@ -83,7 +83,7 @@ While 9 walls is a necessary criterion, it's not a sufficient one. Here are 10 r
 
 <center><img src="http://strangelyconsistent.org/blog/images/random-9-walls.png"></center>
 
-Of these, only the upper right one is a correct maze. It's not just how many walls you have, it's how you place them, too!
+Of these, only the upper right one is a correct maze. It's not just how many walls you have, it's how you use them, too!
 
 (If we generate a random 9-walled grid, we're now down to a 1-in-13 chance that the grid is also accidentally a well-formed maze.)
 
