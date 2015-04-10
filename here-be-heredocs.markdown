@@ -203,7 +203,7 @@ In the case of de-indentation of interpolated variables, it was more of a clear-
     <TimToady> in fact, the discussion at S02:4474 stems from
                that time
 
-In spite of all this, I remain hopeful. Maaaaaybe we can deviate every so slightly from the one-pass parsing rule just to be a bit more DWIM-y to users who like both constants and heredocs. Maybe, just maybe, there's a clean way to do that. There's an [open RT ticket](https://rt.perl.org/Public/Bug/Display.html?id=117853) that keeps hoping there is.
+In spite of all this, I remain hopeful. Maaaaaybe we can deviate ever so slightly from the one-pass parsing rule just to be a bit more DWIM-y to users who like both constants and heredocs. Maybe, just maybe, there's a clean way to do that. There's an [open RT ticket](https://rt.perl.org/Public/Bug/Display.html?id=117853) that keeps hoping there is.
 
 In the meantime, there's also a workaround. If I just put the semicolon after the heredoc, things work out.
 
