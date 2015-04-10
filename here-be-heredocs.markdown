@@ -143,7 +143,7 @@ Before July 2013, this used to warn about not-enough whitespace during de-intent
 
 Yes, you read that right. Before the dust settled around exactly how to implement heredocs, you could get warnings because the interpolated *strings* in the heredoc were not properly indented. The heredoc itself would look fine in the code, but you'd still get the warning.
 
-Arguably there are two "local optima" involved, though. Let me lay them out for you:
+Arguably there are two "local optima" involved, though. Two possible ways in which we could view the process of interpolation/de-indentation. Let me lay them out for you:
 
 1. First, the heredoc string is finalized by interpolating all the variables into it. The resulting string is then de-indented.
 
