@@ -29,7 +29,7 @@ In Perl 5, you'd do this:
 
 Heredocs could be said to be "anti-socially indented" compared to the rest of the program. If you quickly scan through a program, you'll see the general structure of it by how things are indented... plus a number of heredoc blocks of text completely ruining the picture.
 
-I remember retionalizing this to myself. Thinking "oh well, heredocs are a bit special, they 'deserve' to stand out from the rest of the program the way they do". I no longer think that. In fact, I'd say the effect gets worse the bigger your application. Bigger applications tend to rely more on nested blocks and indentation. So this is not likely to be a big problem for straightforward scripts with no control flow to speak of. But it is a problem as your application grows.
+I remember retionalizing this to myself. Thinking "oh well, heredocs are a bit special, they 'deserve' to stand out from the rest of the program the way they do". I no longer think that. In fact, I'd say the effect gets worse the bigger your application is. Bigger applications tend to rely more on nested blocks and indentation. So this is not likely to be a big problem for straightforward scripts with no control flow to speak of. But it is a problem as your application grows.
 
 Here's how I would write the corresponding Perl 6 heredoc.
 
