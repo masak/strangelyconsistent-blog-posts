@@ -3,7 +3,7 @@ title: Here be heredocs
 author: Carl Mäsak
 created: 2015-04-10T20:28:59+02:00
 ---
-I used to consider Perl 6 heredocs a clear-cut symptom of second-system syndrome: taking a useful feature and weighing it down with extravagant bells and whistles until it cannot move. I read the specification for them and would think, leave good enough alone. Don't fix it if it ain't broken.
+I used to consider Perl 6 heredocs a clear-cut symptom of second-system syndrome: taking a useful feature and weighing it down with extravagant bells and whistles until it cannot move. I read the specification for them and would think, leave well enough alone. Don't fix it if it ain't broken.
 
 Since nowadays I've done a complete reversal on that opinion, and really love Perl 6's heredocs, I thought I would write my take on them.
 
@@ -47,6 +47,24 @@ Here's how I would write the corresponding Perl 6 heredoc.
     }
 
 I'd say visually, that's a big improvement. S02 explains what's going on: "Leading whitespace equivalent to the indentation of the delimiter will be removed from all preceding lines."
+
+I should note that even in Perl 5, you could conceivably do manual de-indenting. Something like this:
+
+    for my $n (reverse 1..99) {
+        my $n1 = $n - 1;
+        my $n_s = $n == 1 ? "" : "s";
+        my $n1_s = $n1 == 1 ? "" : "s";
+
+        print join "\n", map { substr $_, 8 } split /\n/, <<"VERSE";
+            $n bottle$n_s of beer on the wall!
+            $n bottle$n_s of beer!
+            Take one down, pass it around,
+            $n1 bottle$n1_s of beer on the wall!
+
+    VERSE
+    }
+
+But (a) that still leaves the terminator in an awkward position, and (b) doing it manually is extra code to get right and to maintain.
 
 ## The `.indent` method
 
