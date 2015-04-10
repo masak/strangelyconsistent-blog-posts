@@ -127,6 +127,8 @@ The exact choice of quotes doesn't determine whether the heredoc interpolates or
 
 A word of warning if, like me, you decide to use single quotes around your terminator: you have to put in some whitespace between the `to` and the single quote. This is because `to'VERSE` is a valid identifier in Perl 6. That's why I put in the whitespace both before and after the `:to`. And now that it's there, I think I like it better. I might not always put it in, for example when the heredoc operator is part of a bigger expression and needs to be more of a visual pill in itself. But here, `qq :to 'VERSE'` looks nice and laid-back to me.
 
+Or you could use `qq:to<VERSE>`, which also conveys "this is a string" and doesn't have the above apostrophe problem.
+
 ## Indentation, revisited
 
 Let me tell you a story that conveys quite well the Perl 6 maxim of "tormenting the implementors" (to benefit the users).
