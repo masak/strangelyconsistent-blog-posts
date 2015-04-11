@@ -218,4 +218,6 @@ In the meantime, there's also a workaround. If I just put the semicolon after th
 
 It's not ideal, but it will do in the interim.
 
+**Update 2015-04-11:** Not four hours after I published my post, TimToady++ had constants with heredocs patched (cleanly) into Rakudo. He also updated S02. So I'm officially out of discomforts. 哈哈
+
 Anyway, that was my story about heredocs. Here's to heredocs! 🍻
