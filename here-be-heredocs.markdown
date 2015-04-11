@@ -64,7 +64,7 @@ I should note that even in Perl 5, you could conceivably do manual de-indenting.
     VERSE
     }
 
-But (a) that still leaves the terminator in an awkward position, and (b) doing it manually is extra code to get right and to maintain.
+But (a) that still leaves the terminator in an awkward position, and (b) doing it manually is extra code to get right and to maintain. (Of course, as nine++ pointed out on the channel, you can put the right amount of indentation into the terminator symbol. But, ick. I much prefer not having to do that.)
 
 ## The `.indent` method
 
@@ -93,7 +93,7 @@ The method works with a negative argument. In which case it (of course) *removes
     Give up?
     Never!
 
-As the final crowning touch, the method accepts a `*` (whatever) argument. Meaning, in this case, "remove all the indentation you can get away with". This is a nice default. Also, that's basically what heredocs end up doing, if for the purposes of de-indenting you consider the terminator to be part of the string.
+As the final crowning touch, the method accepts a `*` (whatever) argument. Meaning, in this case, "(consistently) remove the biggest amount of indentation you can get away with". This is a nice default. Also, that's basically what heredocs end up doing, if for the purposes of de-indenting you consider the terminator to be part of the string.
 
 The surface reason to add this method was that this was something heredocs needed to do internally *anyway*. But as it turns out, `.indent` is just a generally useful method to have around. It's possible to implement yourself (`lines`, `map`, `join`), but why bother? It's right there.
 
