@@ -51,81 +51,50 @@ This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the
 
 Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers.
 
-    my int $s = 0;
-    while $s <= 9 {
-        ++$s, next if $s == 0;
-        my int $e = 0;
-        while $e <= 9 {
-            ++$e, next if $e == $s;
-            my int $n = 0;
-            while $n <= 9 {
-                ++$n, next if $n == $s;
-                ++$n, next if $n == $e;
-                my int $d = 0;
-                while $d <= 9 {
-                    ++$d, next if $d == $s;
-                    ++$d, next if $d == $e;
-                    ++$d, next if $d == $n;
-
-                    my int $send = :10[$s, $e, $n, $d];
+    my int ($send, $more, $money);
      
-                    my int $m = 0;
-                    while $m <= 9 {
-                        ++$m, next if $m == 0;
-                        ++$m, next if $m == $s;
-                        ++$m, next if $m == $e;
-                        ++$m, next if $m == $n;
-                        ++$m, next if $m == $d;
-                        my int $o = 0;
-                        while $o <= 9 {
-                            ++$o, next if $o == $s;
-                            ++$o, next if $o == $e;
-                            ++$o, next if $o == $n;
-                            ++$o, next if $o == $d;
-                            ++$o, next if $o == $m;
-                            my int $r = 0;
-                            while $r <= 9 {
-                                ++$r, next if $r == $s;
-                                ++$r, next if $r == $e;
-                                ++$r, next if $r == $n;
-                                ++$r, next if $r == $d;
-                                ++$r, next if $r == $m;
-                                ++$r, next if $r == $o;
-
-                                my int $more = :10[$m, $o, $r, $e];
+    loop (my int $s = 0; $s <= 9; ++$s) {
+        next if $s == 0;
      
-                                my int $y = 0;
-                                while $y <= 9 {
-                                    ++$y, next if $y == $s;
-                                    ++$y, next if $y == $e;
-                                    ++$y, next if $y == $n;
-                                    ++$y, next if $y == $d;
-                                    ++$y, next if $y == $m;
-                                    ++$y, next if $y == $o;
-                                    ++$y, next if $y == $r;
-
-                                    my int $money = :10[$m, $o, $n, $e, $y];
-                                    ++$y, next unless $send + $more == $money;
+        loop (my int $e = 0; $e <= 9; ++$e) {
+            next if $e == $s;
+     
+            loop (my int $n = 0; $n <= 9; ++$n) {
+                next if $n == any($s, $e);
+     
+                loop (my int $d = 0; $d <= 9; ++$d) {
+                    next if $d == any($s, $e, $n);
+     
+                    $send = :10[$s, $e, $n, $d];
+     
+                    loop (my int $m = 0; $m <= 9; ++$m) {
+                        next if $m == any(0, $s, $e, $n, $d);
+                        
+                        loop (my int $o = 0; $o <= 9; ++$o) {
+                            next if $o == any($s, $e, $n, $d, $m);
+     
+                            loop (my int $r = 0; $r <= 9; ++$r) {
+                                next if $r == any($s, $e, $n, $d, $m, $o);
+     
+                                $more = :10[$m, $o, $r, $e];
+     
+                                loop (my int $y = 0; $y <= 9; ++$y) {
+                                    next if $y == any($s, $e, $n, $d, $m, $o, $r);
+     
+                                    $money = :10[$m, $o, $n, $e, $y];
+                                    next unless $send + $more == $money;
      
                                     say "$send + $more == $money";
-                                    ++$y;
                                 }
-                                ++$r;
                             }
-                            ++$o;
                         }
-                        ++$m;
                     }
-                    ++$d;
                 }
-                ++$n;
             }
-            ++$e;
         }
-        ++$s;
     }
 
-It's a bit telling that this was the only version where I inadvertently introduced a mistake and caused an infinite loop the first time around.
+(cygz++ for pointing out that `loop (;;)` works a lot better here than `while` and manual increment; and for rewriting the code accordingly.)
 
 Despite trying really hard, this version still takes 5 minutes. The corresponding Perl 5 code (which doesn't do natives) takes 3.3 seconds.
 
@@ -293,7 +262,7 @@ Let me just conclude by making a few points.
 * We're doing textual substitution, and the solution carries with it everything I detest about textual macros. (Also sometimes known as "unhygienic macros", though I maintain that if a macro is textual, it's already so bad that the notion of hygiene isn't even applicable.)
 * So please consider this a throwaway prototype. Textual substitution just happens to be what we can do right now. The *real* solution would of course work on the AST level.
 * The most interesting part of the transformation (in my view) is what `statement:amb-my` does. It's saying "take the remaining statements in this block and nest them inside my block". This naturally paves the way for *AST transformers*, something I haven't visualized quite so clearly until I started thinking about this problem. One might imagine a standard library of these making life easier for the macro author.
-* `for` loops are slow. One would like to optimize them into `while` loops (and `next`s) when possible. In this case it's possible, and a real macro transformer would have all the information available to find that it's possible. In fact, it wouldn't take *a lot* to make the above text-munging solution have enough information to do that optimization. (It'd need to store the statements in an intermediate AST form, which it could them query. [That's all.](http://strangelyconsistent.org/blog/its-just-a-tree-silly))
+* `for` loops are slow. One would like to optimize them into `loop (;;)` (and `next`s) when possible. In this case it's possible, and a real macro transformer would have all the information available to find that it's possible. In fact, it wouldn't take *a lot* to make the above text-munging solution have enough information to do that optimization. (It'd need to store the statements in an intermediate AST form, which it could them query. [That's all.](http://strangelyconsistent.org/blog/its-just-a-tree-silly))
 
 Lately I've been nosing around languages that compile to JavaScript. Such languages allow us to state the program in a nicer, more fit-for-the-task language than JavaScript, but still get all the advantages of being able to run things in the browser.
 
