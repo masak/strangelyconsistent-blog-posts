@@ -51,8 +51,6 @@ This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the
 
 Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers.
 
-    my int ($send, $more, $money);
-
     loop (my int $s = 0; $s <= 9; ++$s) {
         next if $s == 0;
 
@@ -68,7 +66,7 @@ Where the previous version tried to stick close to the original, this version ju
                     next if $d == $e;
                     next if $d == $n;
 
-                    $send = :10[$s, $e, $n, $d];
+                    my int $send = :10[$s, $e, $n, $d];
 
                     loop (my int $m = 0; $m <= 9; ++$m) {
                         next if $m == 0;
@@ -92,7 +90,7 @@ Where the previous version tried to stick close to the original, this version ju
                                 next if $r == $m;
                                 next if $r == $o;
 
-                                $more = :10[$m, $o, $r, $e];
+                                my int $more = :10[$m, $o, $r, $e];
 
                                 loop (my int $y = 0; $y <= 9; ++$y) {
                                     next if $y == $s;
@@ -103,7 +101,7 @@ Where the previous version tried to stick close to the original, this version ju
                                     next if $y == $o;
                                     next if $y == $r;
 
-                                    $money = :10[$m, $o, $n, $e, $y];
+                                    my int $money = :10[$m, $o, $n, $e, $y];
                                     next unless $send + $more == $money;
 
                                     say "$send + $more == $money";
