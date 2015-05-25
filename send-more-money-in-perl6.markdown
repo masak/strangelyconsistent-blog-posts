@@ -52,38 +52,60 @@ This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the
 Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers.
 
     my int ($send, $more, $money);
-     
+
     loop (my int $s = 0; $s <= 9; ++$s) {
         next if $s == 0;
-     
+
         loop (my int $e = 0; $e <= 9; ++$e) {
             next if $e == $s;
-     
+
             loop (my int $n = 0; $n <= 9; ++$n) {
-                next if $n == any($s, $e);
-     
+                next if $n == $s;
+                next if $n == $e;
+
                 loop (my int $d = 0; $d <= 9; ++$d) {
-                    next if $d == any($s, $e, $n);
-     
+                    next if $d == $s;
+                    next if $d == $e;
+                    next if $d == $n;
+
                     $send = :10[$s, $e, $n, $d];
-     
+
                     loop (my int $m = 0; $m <= 9; ++$m) {
-                        next if $m == any(0, $s, $e, $n, $d);
-                        
+                        next if $m == 0;
+                        next if $m == $s;
+                        next if $m == $e;
+                        next if $m == $n;
+                        next if $m == $d;
+
                         loop (my int $o = 0; $o <= 9; ++$o) {
-                            next if $o == any($s, $e, $n, $d, $m);
-     
+                            next if $o == $s;
+                            next if $o == $e;
+                            next if $o == $n;
+                            next if $o == $d;
+                            next if $o == $m;
+
                             loop (my int $r = 0; $r <= 9; ++$r) {
-                                next if $r == any($s, $e, $n, $d, $m, $o);
-     
+                                next if $r == $s;
+                                next if $r == $e;
+                                next if $r == $n;
+                                next if $r == $d;
+                                next if $r == $m;
+                                next if $r == $o;
+
                                 $more = :10[$m, $o, $r, $e];
-     
+
                                 loop (my int $y = 0; $y <= 9; ++$y) {
-                                    next if $y == any($s, $e, $n, $d, $m, $o, $r);
-     
+                                    next if $y == $s;
+                                    next if $y == $e;
+                                    next if $y == $n;
+                                    next if $y == $d;
+                                    next if $y == $m;
+                                    next if $y == $o;
+                                    next if $y == $r;
+
                                     $money = :10[$m, $o, $n, $e, $y];
                                     next unless $send + $more == $money;
-     
+
                                     say "$send + $more == $money";
                                 }
                             }
