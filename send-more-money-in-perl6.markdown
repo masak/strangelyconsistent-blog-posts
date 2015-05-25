@@ -45,7 +45,7 @@ Here we're trying to get as close as possible to the original Haskell code witho
         }
     }
 
-This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the original Haskell version finishes in less than a second &mdash; but then I wrote an equivalent Perl 5 version, and it took 8 minutes. Paradoxically, that still made me feel less bad about Perl 6's performance. ("Wow, we're within an order of magnitude of Perl 5!")
+This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the original Haskell version finishes in less than a second &mdash; but then I wrote an equivalent Perl 5 version, and it took 8 minutes. Paradoxically, that somehow made me feel less bad about Perl 6's performance. ("Wow, we're within an order of magnitude of Perl 5!")
 
 ## Version B: iteration
 
