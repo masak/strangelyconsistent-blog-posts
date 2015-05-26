@@ -49,7 +49,7 @@ This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the
 
 ## Version B: iteration
 
-Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers.
+Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers. Among all the solutions, this one fails MJD's criteria the hardest... all in the name of speed.
 
     my int $s = -1;
     while ++$s <= 9 {
