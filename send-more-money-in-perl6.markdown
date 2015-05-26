@@ -146,7 +146,7 @@ Where the previous version tried to stick close to the original, this version ju
 
 This version takes 22 seconds on my laptop. Certainly an improvement over version A. The corresponding Perl 5 code (which doesn't do natives) takes 1.3 seconds. An NQP version takes 0.69 seconds (beating even Haskell), which leads me to believe we can still be a lot faster in Perl 6, too.
 
-(**Update:** Apparently, if you produce Perl 5, Perl 6 and NQP versions of the same script, then you will be approached by japhb who will invite you to become part of a loosely-knit group of heroes known as [the Benchmarker initiative](https://github.com/japhb/perl6-bench). I [added my scripts](https://github.com/japhb/perl6-bench/commit/03de262b7ec114a4d5b649ab9098eab6b62fedb5) to the growing number of benchmark scripts. Exciting!)
+(**Update:** Apparently, if you produce Perl 5, Perl 6 and NQP versions of the same script, then you will be approached by japhb++ who will invite you to become part of a loosely-knit group of heroes known as [the Benchmarker initiative](https://github.com/japhb/perl6-bench). I [added my scripts](https://github.com/japhb/perl6-bench/commit/03de262b7ec114a4d5b649ab9098eab6b62fedb5) to the growing number of benchmark scripts. Exciting!)
 
 ## Version C: regex engine
 
