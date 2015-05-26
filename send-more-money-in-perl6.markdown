@@ -51,48 +51,56 @@ This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the
 
 Where the previous version tried to stick close to the original, this version just dumps all such concerns and tries to go fast. It does so by spewing out explicit loops, checks, and native integers.
 
-    loop (my int $s = 0; $s <= 9; ++$s) {
+    my int $s = -1;
+    while ++$s <= 9 {
         next if $s == 0;
-
-        loop (my int $e = 0; $e <= 9; ++$e) {
+     
+        my int $e = -1;
+        while ++$e <= 9 {
             next if $e == $s;
-
-            loop (my int $n = 0; $n <= 9; ++$n) {
+     
+            my int $n = -1;
+            while ++$n <= 9 {
                 next if $n == $s;
                 next if $n == $e;
-
-                loop (my int $d = 0; $d <= 9; ++$d) {
+     
+                my int $d = -1;
+                while ++$d <= 9 {
                     next if $d == $s;
                     next if $d == $e;
                     next if $d == $n;
-
-                    my int $send = :10[$s, $e, $n, $d];
-
-                    loop (my int $m = 0; $m <= 9; ++$m) {
+     
+                    my int $send = $s*1000 + $e*100 + $n*10 + $d;
+     
+                    my int $m = -1;
+                    while ++$m <= 9 {
                         next if $m == 0;
                         next if $m == $s;
                         next if $m == $e;
                         next if $m == $n;
                         next if $m == $d;
-
-                        loop (my int $o = 0; $o <= 9; ++$o) {
+     
+                        my int $o = -1;
+                        while ++$o <= 9 {
                             next if $o == $s;
                             next if $o == $e;
                             next if $o == $n;
                             next if $o == $d;
                             next if $o == $m;
-
-                            loop (my int $r = 0; $r <= 9; ++$r) {
+     
+                            my int $r = -1;
+                            while ++$r <= 9 {
                                 next if $r == $s;
                                 next if $r == $e;
                                 next if $r == $n;
                                 next if $r == $d;
                                 next if $r == $m;
                                 next if $r == $o;
-
-                                my int $more = :10[$m, $o, $r, $e];
-
-                                loop (my int $y = 0; $y <= 9; ++$y) {
+     
+                                my int $more = $m*1000 + $o*100 + $r*10 + $e;
+     
+                                my int $y = -1;
+                                while ++$y <= 9 {
                                     next if $y == $s;
                                     next if $y == $e;
                                     next if $y == $n;
@@ -100,10 +108,11 @@ Where the previous version tried to stick close to the original, this version ju
                                     next if $y == $m;
                                     next if $y == $o;
                                     next if $y == $r;
-
-                                    my int $money = :10[$m, $o, $n, $e, $y];
+     
+                                    my int $money =
+                                        $m*10000 + $o*1000 + $n*100 + $e*10 + $y;
                                     next unless $send + $more == $money;
-
+     
                                     say "$send + $more == $money";
                                 }
                             }
@@ -114,9 +123,9 @@ Where the previous version tried to stick close to the original, this version ju
         }
     }
 
-(cygz++ for pointing out that `loop (;;)` works a lot better here than `while` and manual increment; and for rewriting the code accordingly.)
+(cygz++ for suggesting many improvements to the above code, which eventually led to the fast version we have now.)
 
-Despite trying really hard, this version still takes 5 minutes. The corresponding Perl 5 code (which doesn't do natives) takes 3.3 seconds.
+This version takes 22 seconds on my laptop. Certainly an improvement over version A. The corresponding Perl 5 code (which doesn't do natives) takes 1.3 seconds. An NQP version takes 0.69 seconds (beating even Haskell), which leads me to believe we can still be a lot faster in Perl 6, too.
 
 ## Version C: regex engine
 
