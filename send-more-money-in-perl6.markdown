@@ -15,18 +15,18 @@ Here we're trying to get as close as possible to the original Haskell code witho
 
     my @digits = 0..9;
      
-    choose @digits ∖ 0, -> $s {
-    choose @digits ∖ $s, -> $e {
-    choose @digits ∖ ($s, $e), -> $n {
-    choose @digits ∖ ($s, $e, $n), -> $d {
+    choose @digits (-) 0, -> $s {
+    choose @digits (-) $s, -> $e {
+    choose @digits (-) ($s, $e), -> $n {
+    choose @digits (-) ($s, $e, $n), -> $d {
     my $send = :10[$s, $e, $n, $d];
      
-    choose @digits ∖ (0, $s, $e, $n, $d), -> $m {
-    choose @digits ∖ ($s, $e, $n, $d, $m), -> $o {
-    choose @digits ∖ ($s, $e, $n, $d, $m, $o), -> $r {
+    choose @digits (-) (0, $s, $e, $n, $d), -> $m {
+    choose @digits (-) ($s, $e, $n, $d, $m), -> $o {
+    choose @digits (-) ($s, $e, $n, $d, $m, $o), -> $r {
     my $more = :10[$m, $o, $r, $e];
      
-    choose @digits ∖ ($s, $e, $n, $d, $m, $o, $r), -> $y {
+    choose @digits (-) ($s, $e, $n, $d, $m, $o, $r), -> $y {
     my $money = :10[$m, $o, $n, $e, $y];
      
     guard $send + $more == $money, {
@@ -46,6 +46,25 @@ Here we're trying to get as close as possible to the original Haskell code witho
     }
 
 This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the original Haskell version finishes in less than a second &mdash; but then I wrote an equivalent Perl 5 version, and it took 8 minutes. Paradoxically, that somehow made me feel less bad about Perl 6's performance. ("Wow, we're within an order of magnitude of Perl 5!")
+
+## Intermezzo
+
+If you're new to Perl 6, you might not recognize `(-)` as set difference. I could also have used `∖` (U+2216 SET MINUS), but for once, the Texas version felt clearer.
+
+I also like the clarity of `$send = :10[$s, $e, $n, $d]`. In the Perl 5 versions, I ended up with this helper sub that does the same.
+
+    sub base_10 {
+        my (@digits) = @_;
+        my $result = 0;
+        while (@digits) {
+            my $digit = shift @digits;
+            $result *= 10;
+            $result += $digit;
+        }
+        return $result;
+    }
+
+Perl 6 just treats it as a variant of the base conversion syntax.
 
 ## Version B: iteration
 
@@ -127,6 +146,8 @@ Where the previous version tried to stick close to the original, this version ju
 
 This version takes 22 seconds on my laptop. Certainly an improvement over version A. The corresponding Perl 5 code (which doesn't do natives) takes 1.3 seconds. An NQP version takes 0.69 seconds (beating even Haskell), which leads me to believe we can still be a lot faster in Perl 6, too.
 
+(**Update:** Apparently, if you produce Perl 5, Perl 6 and NQP versions of the same script, then you will be approached by japhb who will invite you to become part of a loosely-knit group of heroes known as [the Benchmarker initiative](https://github.com/japhb/perl6-bench). I [added my scripts](https://github.com/japhb/perl6-bench/commit/03de262b7ec114a4d5b649ab9098eab6b62fedb5) to the growing number of benchmark scripts. Exciting!)
+
 ## Version C: regex engine
 
 Now for a version that tries to capitalize on the regex engine having backtracking behavior. The basic idea (using `amb`) comes from [Rosetta Code](http://rosettacode.org/wiki/Amb#Perl_6). I'm a teeny bit disappointed `amb` has to resort to building regex fragments as strings, which feels inelegant.
@@ -165,24 +186,7 @@ On the plus side, this algorithm nails the linear code layout and gets fairly cl
 
 Too bad it's so damn slow. Extrapolating from a shorter run, I estimate that the program would take around 100 minutes to finish. But it gets killed off on my system after 88 minutes because it leaks ridiculous quantities of memory (11 MB a second, or 660 MB a minute). I wonder if I could submit that as a rakudobug.
 
-## Intermezzo
-
-If you're new to Perl 6, you might not recognize `(-)` as set difference. I could also have used `∖` (U+2216 SET MINUS), but for once, the Texas version felt clearer.
-
-I also like the clarity of `$send = :10[$s, $e, $n, $d]`. In the Perl 5 versions, I ended up with this helper sub that does the same.
-
-    sub base_10 {
-        my (@digits) = @_;
-        my $result = 0;
-        while (@digits) {
-            my $digit = shift @digits;
-            $result *= 10;
-            $result += $digit;
-        }
-        return $result;
-    }
-
-Perl 6 just treats it as a variant of the base conversion syntax.
+(**Update:** At the expense of the nice syntactic abstraction offered by `amb`, I managed to produce a version of the regex that actually completes before it runs out of memory. (And doesn't leak nearly as bad.) [Here it is](https://gist.github.com/masak/ad33c08b86344f8f315e). It runs in little over 6 minutes; worse than version B but better than version A.)
 
 ## Version D: macros/speculation
 
