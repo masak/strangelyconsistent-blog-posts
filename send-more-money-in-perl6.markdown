@@ -47,6 +47,8 @@ Here we're trying to get as close as possible to the original Haskell code witho
 
 This takes about 26 minutes to run on my laptop. I despaired at this &mdash; the original Haskell version finishes in less than a second &mdash; but then I wrote an equivalent Perl 5 version, and it took 8 minutes. Paradoxically, that somehow made me feel less bad about Perl 6's performance. ("Wow, we're within an order of magnitude of Perl 5!")
 
+(**Update:** Peter Sergeant sent me [a faster Perl 5 version](https://gist.github.com/sheriff/c63fb15a4b1502219097) of the above script. His uses hashes instead of arrays. My [Perl 6 port](https://gist.github.com/masak/875711cac32ba0244f7a) of this takes 15 minutes to run. That's two orders of magnitude slower &mdash; not cool.)
+
 ## Intermezzo
 
 If you're new to Perl 6, you might not recognize `(-)` as set difference. I could also have used `∖` (U+2216 SET MINUS), but for once, the Texas version felt clearer.
@@ -147,6 +149,8 @@ Where the previous version tried to stick close to the original, this version ju
 This version takes 22 seconds on my laptop. Certainly an improvement over version A. The corresponding Perl 5 code (which doesn't do natives) takes 1.3 seconds. An NQP version takes 0.69 seconds (beating even Haskell), which leads me to believe we can still be a lot faster in Perl 6, too.
 
 (**Update:** Apparently, if you produce Perl 5, Perl 6 and NQP versions of the same script, then you will be approached by japhb++ who will invite you to become part of a loosely-knit group of heroes known as [the Benchmarker initiative](https://github.com/japhb/perl6-bench). I [added my scripts](https://github.com/japhb/perl6-bench/commit/03de262b7ec114a4d5b649ab9098eab6b62fedb5) to the growing number of benchmark scripts. Exciting!)
+
+(**Update:** Wohoo! timotimo++ made some commits to Rakudo, and suddenly this Perl 6 script takes but 15 seconds to run! That's like a 30% time saving!)
 
 ## Version C: regex engine
 
