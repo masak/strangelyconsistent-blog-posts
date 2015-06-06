@@ -23,7 +23,7 @@ The function implements what is more or less the mathematical definition of the
               | +1      if x  > 0
               \
 
-The method does exactly this. So what's the problem.
+The method does exactly this. So what's the problem?
 
 Right, `NaN`.
 
@@ -81,7 +81,11 @@ part of a rapidly shrinking unfortunate majority. If we're not looking to *fix*
 that in our home language, we're increasingly irresponsible and reckless.
 
 This is what computing machines are good at! Enumerating cases! We should be
-having them do that all the time, on our business-critical code.
+having them do that all the time, on our business-critical code. Or,
+conversely, just writing code without the safety net of full enumeration of
+cases should be rightly recognized as belonging with other barbaric development
+practices of the mid-20th century, surely caused by extreme scarcity of memory
+or CPU, but which we have &mdash; ought to have &mdash; grown out of by now.
 
 But... *sigh*... yes, the code looks right. Which is why I don't particularly
 feel like running `git blame` on it this time.
