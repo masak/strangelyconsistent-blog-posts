@@ -25,7 +25,7 @@ There are two roles, `Thing` and `Room`. That will make more sense tomorrow, whe
 In the game, the rooms are connected as shown on this map:
 
 <img src="http://strangelyconsistent.org/blog/images/crypt-map.png"
-     width="720px" height="540px">
+     width="720" height="540">
 
 There are no coordinates placing the rooms anywhere. One *could* view them as sitting in a 2x3x2 grid, with coordinates to denote position, and neighbourhood relations being indicated by nearness, or something. It would be a bit fragile, but could be made to work.
 
