@@ -3,7 +3,7 @@ title: Adding 'goto' to your Perl 6 program
 author: Carl Mäsak
 created: 2010-01-08T06:22:00+01:00
 ---
-Today I tested something that jnthn++ and I had discussed during a walk in thenon-tourist parts of Riga after Baltic Perl Workshop.
+Today I tested something that jnthn++ and I had discussed during a walk in the non-tourist parts of Riga after Baltic Perl Workshop.
 
     $ cat test-goto
     Q:PIR {
