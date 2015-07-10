@@ -168,7 +168,7 @@ I don't know about you, but I didn't expect there to be that many. Yes, that's *
 
 But apparently there's a lot of new wiggle room for the walls once you increase it to 4x4.
 
-I rendered an image of all 12600 4x4 mazes, but it would be foolish to try to put it here in the blog post. But I can [link you to it](http://strangelyconsistent.org/blog/images/all-the-4x4-mazes.png). (Warning: 3.7 MB `.png` file. timotimo++ for helping shrink it from its original 4.4 MB.)
+I rendered an image of all 12600 4x4 mazes, but it would be foolish to try to put it here in the blog post. But I can [link you to it](http://strangelyconsistent.org/blog/images/all-the-4x4-mazes.png). (Warning: 1.6 MB `.png` file. nemo++ for helping shrink it from 3.7 MB.)
 
 Of the 12600 mazes, 112 have a reflectional symmetry. Which means that if we count all reflections and rotations as distinct, we have (12600 - 112) * 8 + 112 * 4 = 100352 mazes. ([Here's the script](https://gist.github.com/masak/0779367baae65e9ac26b) that finds the symmetries.)
 
