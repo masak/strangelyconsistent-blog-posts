@@ -15,7 +15,7 @@ I look at all of this, and I hope it will last.
 
 What can we do to make sure it does, when a critical mass is reached and people start pouring in? I don't know. [Paul Graham](http://www.paulgraham.com/hackernews.html) has some interesting ideas, which seem to boil down to "expect courtesy". Larry Wall recently [intervened](http://www.nntp.perl.org/group/perl.perl6.language/2009/05/msg31897.html) in an email discussion which threatened to develop trenches.
 
-The Perl 6 community is not having the discussion that the Rail's community is having right now about offensiveness, manners, and a macho attitude... because we're not big enough to have that problem. I believe that the community as a whole is quite open to Perl 6 programmers of both sexes. I cannot say this with certainty, though, since my perspective is limited to that of a man's.
+The Perl 6 community is not having the discussion that the Rail's community is having right now about offensiveness, manners, and a macho attitude... because we're not big enough to have that problem. I believe that the community as a whole is quite open to Perl 6 programmers of all sexes. I cannot say this with certainty, though, since my perspective is limited to that of a man's.
 
 We're still small, and as we grow we have excellent opportunity to keep the community open, inclusive and accepting. How do we do that?
 
