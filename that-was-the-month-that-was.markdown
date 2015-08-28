@@ -135,7 +135,4 @@ Finally, here are the things I promised I'd do, annotated with comments on what 
 <dd> </dd>
 </dl>
 
-
-Looking over those results, I'm both a bit proud over the things I did do, and eager to improve on the things I didn't. I guess that's the way it should be.
-
-
+Looking over those results, I'm both a bit proud of the things I did do, and eager to improve on the things I didn't. I guess that's the way it should be.
