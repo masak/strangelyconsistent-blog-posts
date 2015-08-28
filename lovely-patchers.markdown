@@ -14,7 +14,7 @@ Later in the week, Илья Беликин (ihrd++) of [Vladivostok.pm](http://v
 ## 5 things you might be helped by if you plan to hack on November
 
 1. First, feel free to **ignore these rules** if they inconvenience you. They are there to help you, not to restrict you.
-2. The three files ** `FEATURES`, `JANITORS` ** and ** `LOOKINTO` ** together constitute our roadmap right now. Note that these files are found in `p5w/`, the Perl 5 implementation of the wiki. **[Update 2008-09-21: Now they're found in `docs/` instead.]** 
+2. The three files **`FEATURES`, `JANITORS`** and **`LOOKINTO`** together constitute our roadmap right now. Note that these files are found in `p5w/`, the Perl 5 implementation of the wiki. **[Update 2008-09-21: Now they're found in `docs/` instead.]** 
 3. As a rule, we implement feature-size things in `p5w` before we try them out on p6w. This is because bugs easily distract from the goal in `p6w`. The Perl 5 version is a sort of **live spec** for the Perl 6 version.
 4. We're currently doing quite a bit of our work in **branches**. Currently, there are two branches: `new-html-template` aims to replace the `HTML::Template` with a new grammar-using module, and `tests` is a playground for new test files for other modules. (Things like branches change quickly. [github](http://github.com/viklund/november/) is the ultimate reference.)
 5. Patches are very welcome, nowadays through the **mailing list** [november-wiki@googlegroups.com](mailto:november-wiki@googlegroups.com), or the **IRC channel** `#november` over at `irc.freenode.org`.
