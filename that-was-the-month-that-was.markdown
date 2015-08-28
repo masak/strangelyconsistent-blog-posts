@@ -84,61 +84,51 @@ Finally, here are the things I promised I'd do, annotated with comments on what 
 <dd>I created **one** really nice-looking layout for p5w, but I still haven't ported it to p6w. mpeters++ contributed a second layout.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Read a synopsis.</dt>
 <dd>I've re-read and enjoyed S02, S04, and S09. Haven't blogged about it, though.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Give S29 some much-needed love.</dt>
 <dd>Only started doing this, by writing about `.fmt` — plan to do a lot more.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Add or curate tests from the Perl test suite.</dt>
 <dd>I've hardly touched the Perl 6 test suite. moritz++ for doing it a lot, though.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Implement a feature in Rakudo.</dt>
 <dd>Not as many as I'd like, but a few.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Triage Rakudo tickets in the Perl RT system.</dt>
 <dd>I've mostly just been creating them. ☺</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Implement MD5 digesting in Perl 6.</dt>
 <dd>This remains a problem slightly above my programming ability. I've written the algorithm, but it doesn't produce the results it's supposed to. I'm stuck.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Add features to p6w that p5w already has. (article history, diffs)</dt>
 <dd>Nope. Still a good idea, though. I'm surprised I didn't mention MediaWiki parsing among the features I was planning to implement, because that part of November is the real winner from the efforts of my one-month spree.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Blog about the architecture of November.</dt>
 <dd>To some degree, yes. Can be done to a greater degree in the future.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Blog about cool things in Perl 6 and Rakudo.</dt>
 <dd>Actually, I've only been blogging about bugs in Rakudo... but I hope I am able to communicate, through most of my posts, my feeling that Perl 6 is awesome. If not, I probably wouldn't keep doing what I'm doing.</dd>
 <dd> </dd>
 </dl>
-
 - <dl>
 <dt>Add POD documentation to PIR subs and methods in Rakudo.</dt>
 <dd>No. Still a great idea, though. The exact implementation of things may change, but good documentation is valuable.</dd>
