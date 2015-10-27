@@ -6,7 +6,7 @@ created: 2015-10-27T15:13:04+01:00
 Let's say you're a [plucky young time traveler from the
 80s](http://tvtropes.org/pmwiki/pmwiki.php/Film/BackToTheFuture) and you go
 back to the 50s because Libyan terrorists are chasing you and then you
-accidentally mess things up with the past and your time machine DeLoeran
+accidentally mess things up with the past and your time machine DeLorean
 is broken and you need to fix that too...
 
 Dealing with the different phases involved in macros is a bit like dealing
