@@ -27,7 +27,7 @@ one beat the last one.
 My weekend, in brief:
 
 * jnthn and I arrived Oslo on the Thursday, and watched Damian Conway giving
-and awesome presentation in a bar. No-one combines geek jokes, almost-accurate
+an awesome presentation in a bar. No-one combines geek jokes, almost-accurate
 physics, and Perl programming like Damian.
 
 * On the Saturday, I spent about an hour introducing a group of newcomers to
