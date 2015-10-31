@@ -45,7 +45,7 @@ As part of this, he became the 100th developer in the perl6 organization.
 
 * sergot++ (Filip Sergot) and I built a presentation framework. It's called
 [Sambal](https://github.com/masak/sambal), and it [turns a DSL into a
-PDF](https://gist.github.com/2173720). I'm happy and proud over how long we
+PDF](https://gist.github.com/2173720). I'm happy and proud of how far we
 managed to get with only two days of work.
 
 * sergot++ and I also spit out a
