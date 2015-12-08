@@ -77,6 +77,14 @@ Developing a small language just to explore certain aspects of language design s
 
 There's lots of little tradeoffs a language designer makes all day. Even for a toy language that's never going to see any actual production use, taking those decisions seriously leads you to interesting new places. The smallest decision can have wide-ranging consequences.
 
+## If you're curious...
+
+...here's what to look at next.
+
+* The [README](https://github.com/masak/007#readme)
+* The [tutorial web page](http://masak.github.io/007/)
+* The [ROADMAP.md](https://github.com/masak/007/blob/master/ROADMAP.md)
+
 Looking forward to where we will take 007 in 2016. We're gearing up to an (internal) [v1.0.0 release](https://github.com/masak/007/blob/master/ROADMAP.md), and after that we have various language/macro ideas that we want to try out. We'll see how soon we manage to make 007 bootstrap its runtime and parser.
 
 I want to take this opportunity to thank Filip Sergot and vendethiel for commits, pull requests, and discussions. Together we form both the developer team and user community of 007. 哈哈
