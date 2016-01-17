@@ -6,8 +6,7 @@ created: 2016-01-17T15:15:23+01:00
 *Thank you sergot++ for eliciting these answers out of me, and prompting me to
 publish them.*
 
-#### Q: Is it common to be totally befuddled by all these macro-related
-concepts?
+#### Q: Is it common to be totally befuddled by all these macro-related concepts?
 
 Yes! In fact, that seems to be the general state of mind not just for people
 who hear about these things now and then, but also for those of us who have
@@ -17,8 +16,7 @@ Seriously though, these are not easy ideas. When you don't deal with them every
 day, they naturally slip away from your attention. The brain prefers it that
 way.
 
-#### Q: I keep seeing all these terms: quasis, unquotes, macros... I *think* I
-know what some of them are, but I'm not sure. Could you explain?
+#### Q: I keep seeing all these terms: quasis, unquotes, macros... I *think* I know what some of them are, but I'm not sure. Could you explain?
 
 Yes. Let's take them in order.
 
@@ -95,7 +93,11 @@ In Perl, you can do `"Hello, $name!"`. This kind of thing is called "string
 interpolation".
 
 Unquotes are like the `$name` interpolation, except that the string is a quasi
-instead, and $name is a Qtree that you want to insert somewhere into the quasi.
+instead, and `$name` is a Qtree that you want to insert somewhere into the quasi.
+
+    quasi {
+        say "Hello," ~ {{{$name}}};
+    }
 
 Just like the `"Hello, $name"` can be different every time (for example, if we
 loop over different `$name` from an array), unquotes make quasis potentially
@@ -135,8 +137,7 @@ Also not a question.
 
 Yeah! You do!
 
-#### Q: Ok, final question: is there something that you've omitted from the
-above explanation that's important?
+#### Q: Ok, final question: is there something that you've omitted from the above explanation that's important?
 
 Oh gosh, yes. Unfortunately macros are still gnarly.
 
