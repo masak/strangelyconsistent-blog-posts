@@ -31,8 +31,8 @@ Quasis are not strictly necessary. You could create all those objects by hand.
     quasi { say "OH HAI" }        # easy way
 
     Q::Block.new(Q::Statement::Expr.new(Q::Postfix::Call.new(
-        Q::Identifier("say"),
-        Q::Literal::Str("OH HAI")
+        Q::Identifier.new("say"),
+        Q::Literal::Str.new("OH HAI")
     )));                          # hard way
 
 It's easier to just write that quasi than to construct all those objects.
