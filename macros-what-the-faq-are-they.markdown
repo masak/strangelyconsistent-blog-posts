@@ -184,8 +184,8 @@ environment of the macro.
 The same is *not* true if we manually return Q objects from the macro:
 
     Q::Block.new(Q::Statement::Expr.new(Q::Postfix::Call.new(
-        Q::Identifier("say"),
-        Q::Literal::Str("OH HAI")
+        Q::Identifier.new("say"),
+        Q::Literal::Str.new("OH HAI")
     )));
 
 In this case, `say` will be a "detached" identifier, and the corresponding two
