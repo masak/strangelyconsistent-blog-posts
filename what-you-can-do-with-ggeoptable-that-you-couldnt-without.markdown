@@ -34,7 +34,7 @@ $
 
 Sorry about the warnings in the beginning, I'll track them down eventually. 哈哈 (**Update 2009-12-01:** Found them. Leaving them in for historical authenticity.)
 
-Anyway, you'll see from the above that the script undestands the addition and multiplication operators, it can take long chains of them, it gets their precedence right, and it understands hexadecimal, binary, octal, scientific notation and arbitrary radices.
+Anyway, you'll see from the above that the script understands the addition and multiplication operators, it can take long chains of them, it gets their precedence right, and it understands hexadecimal, binary, octal, scientific notation and arbitrary radices.
 
 And it weighs in at [56 lines of code](http://github.com/masak/gge/blob/master/examples/algebra)! (48 if you don't count the empty lines.) No, that was not me going mad trying to compress a lot of code into those ~50 lines, I'm just leveraging `GGE::OPTable` (for generating the parse tree) and `Perl6::Grammar` (for parsing the different types of numbers). Even the warning about the leading 0 for the non-octal `0123` gets through intact from the Perl 6 parser. Unintended but kinda nice.
 
