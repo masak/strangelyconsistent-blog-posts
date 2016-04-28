@@ -108,7 +108,7 @@ What needs testing? As so often, the interfaces. In this case, the surface areas
 
 Here's what I'm imagining. The frontend and app are only allowed to talk to each other in certain pre-approved ways. The tests make sure that each source file doesn't color outside of the line. (Need to make that code analysis robust enough.) Ditto with the app and database.
 
-I figure I could use something pre-existing like [Swagger](http://swagger.io/) for the frontent/app interaction. For the app/db interaction, actually using the database schema itself as the canonical source of truth seems like a decent idea.
+I figure I could use something pre-existing like [Swagger](http://swagger.io/) for the frontend/app interaction. For the app/db interaction, actually using the database schema itself as the canonical source of truth seems like a decent idea.
 
 Maybe it makes sense to have both static tests (which check the source code), and runtime tests (which mock the appropriate components and check that the results match in practice). Yes, that sounds about robust enough. (I'm a little unsure how to do this with the client code. Will I need to run it headless, using [PhantomJS](http://phantomjs.org/)? Will that be enough? I might need to refactor just to expose the right kind of information for the tests.)
 
