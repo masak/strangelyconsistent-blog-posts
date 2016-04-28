@@ -83,7 +83,7 @@ One very good argument that I will make at this point, before someone else makes
 These differences go *deep*, to the point where each tier has a quite specialized/different view of the world. To wit:
 
 * The model cares about a certain ongoing game being in a certain well-defined state. It doesn't care about what happened five moves ago.
-* The database, on the other hand, stores *moves* not *game states*. Why? Because the game state can be recreated from the moves, but not the other way around. Individual moves are more "denormalized" if you will, and allow us to do so much more with a game later. (Thanks for this insight, Event Sourcing!) But this means that what's in the model doesn't look structurally like what's persisted.
+* The database, on the other hand, stores *moves*, not *game states*. Why? Because the game state can be recreated from the moves, but not the other way around. Individual moves are more "denormalized" if you will, and allow us to do so much more with a game later. (Thanks for this insight, Event Sourcing!) But this means that what's in the model doesn't look structurally like what's persisted.
 * Meanwhile, the frontend contains a full replica of the game state from the server &mdash; how wasteful &mdash; *but* it also has a lot of "transient" state reflecting (for example) the move that the player is *about* to make. (This is especially apparent in Nex, since making a move is a multi-step process.) The frontend also cares a lot about positions, colors, the keyboard, the mouse, and how these all relate to each other.
 
 But it doesn't end there. The three tiers also have very typical, well-defined relations to each other.
