@@ -39,8 +39,9 @@ The database also sits in its own, separate runloop. Maybe &mdash; probably &mda
 
 It was at this point I felt that something was... well not *wrong* exactly, but *odd*...
 
-    <masak> I was struck by not just how wide apart the database world is from the server backend world,
-            but also how wide apart the [browser] world is from the server backend world
+    <masak> I was struck by not just how wide apart the database world is from
+            the server backend world, but also how wide apart the [browser]
+            world is from the server backend world
     <masak> you're writing three separate things, and making them interoperate
     <masak> I almost feel like writing a blog post about that
 
@@ -60,7 +61,7 @@ So, just to be abundantly clear: the three tiers are *good* &mdash; besides bein
 
 > By segregating an application into tiers, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. &mdash; [Wikipedia](https://en.wikipedia.org/wiki/Multitier_architecture)
 
-> During an application's life cycle, the three-tier approach provides benefits such as reusability, flexibility, manageability, maintainability, and scalability. &mdash; [Windows Dev Center](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685068(v=vs.85).aspx)
+> During an application's life cycle, the three-tier approach provides benefits such as reusability, flexibility, manageability, maintainability, and scalability. &mdash; [Windows Dev Center](https://msdn.microsoft.com/en-us/library/windows/desktop/ms685068(v=vs.85\).aspx)
 
 > Three-tier architecture allows any one of the three tiers to be upgraded or replaced independently. &mdash; [Technopedia](https://www.techopedia.com/definition/24649/three-tier-architecture)
 
