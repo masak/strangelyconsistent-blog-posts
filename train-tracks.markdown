@@ -99,7 +99,7 @@ How many working solutions? Well, armed with the new understanding of displaceme
 
 That's 380 solutions. Now, I hasten to add that not *all* of those are possible. At least one solution that I tried actually building turned out to be impossible because the track tried to run into itself in an unfixable way.
 
-With yet another 8-shaped solution, I had given up trying to make it work because it seemed there was too much displacement. Then my wife stopped by, adjusted some things, and voilà! &mdash; it worked. (It turned out she had the idea to run the track through one of the *small* side-tunnels under the bridge; something that hadn't occurred to me at all.)
+With yet another 8-shaped solution, I had given up trying to make it work because it seemed there was too much displacement. Then my wife stopped by, adjusted some things, and voilà! &mdash; it worked. (She had the idea to run the track through one of the *small* side-tunnels under the bridge; something that hadn't occurred to me at all. There's no way to run a wooden train through that small tunnel, but that *also* wasn't something I restricted up front. Clearly the track itself is possible.)
 
 Anyway, I really enjoyed how this problem turned out to have a completely solvable constraint-programming core of 10 solutions, but then also a complete fauna &mdash; as yet largely unclassified &mdash; of approximate, more-or-less buildable solutions around it. All my searching and drawing can be found in [this Github repository](https://github.com/masak/tracks) &mdash; others who wish to experiment may want to start from the ideas in there, rather than from scratch.
 
