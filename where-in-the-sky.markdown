@@ -19,7 +19,7 @@ He had put together that the planets we were admiring in the book and in the Spa
 
 I had absolutely no idea. I told him it's not on the sky right now, but for all I knew, it might have been.
 
-Now I really want to know how to find this out. Sure, there are calculations involved. I want to learn enough about them to be able to write a small, understandable computer program for me. It should be able to answer a question such as "Where on the sky is Mars?". Being able to ask it for all the planets in our solar system seems like an easy generalization without much extra cost.
+Now I really want to know how to find this out. Sure, there are calculations involved. I want to learn enough about them to be able to write a small, understandable computer program for me. It should be able to answer a question such as "Where in the sky is Mars?". Being able to ask it for all the planets in our solar system seems like an easy generalization without much extra cost.
 
 Looking at tutorials like [this one with illustrations](http://www.davidcolarusso.com/astro/) and [this one with detailed calculations](http://stjarnhimlen.se/comp/tutorial.html), I'm heartened to learn that it's not only possible to do this, but more or less the steps I hoped:
 
@@ -31,7 +31,7 @@ There are many complicating factors that together make a simple calculation mere
 
 I haven't written any code yet, so consider this a kind of statement of intent. I know there must be oodles of "night sky" apps and desktop programs that already present this information... but my goal is to make the calculation myself, with a program, and to get it right. Lovingly handcrafted planetary positions.
 
-It would also be nice to be able to ask "Where on the sky is the moon?" (that one's easy to double-check) or "Where on the sky is the International Space station?". If anything, that ought to be a much simpler calculation, since these orbit Earth.
+It would also be nice to be able to ask "Where in the sky is the moon?" (that one's easy to double-check) or "Where in the sky is the International Space station?". If anything, that ought to be a much simpler calculation, since these orbit Earth.
 
 Once I can reliably calculate all the positions, being able to know at what time things rise and set would also be very useful.
 
