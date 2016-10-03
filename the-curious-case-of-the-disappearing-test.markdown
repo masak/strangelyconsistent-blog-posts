@@ -31,6 +31,6 @@ Anyway, [the test started doing Stash traversal](https://github.com/masak/007/co
 
 And then the world paused a bit, like a good comedian, for maximal effect.
 
-Yes, the test now contained an excellent implementation of finding all the types in Perl 6 land. This is *exactly what the builtin initialization code needed* to never be inconsistent in the first place. The tree walked [moved into the builtins code itself](https://github.com/masak/007/commit/d622d372d4dfd10a705d978f940e16673eeaedd2). The test file vanished in the night, its job done forever.
+Yes, the test now contained an excellent implementation of finding all the types in Perl 6 land. This is *exactly what the builtin initialization code needed* to never be inconsistent in the first place. The tree walker [moved into the builtins code itself](https://github.com/masak/007/commit/d622d372d4dfd10a705d978f940e16673eeaedd2). The test file vanished in the night, its job done forever.
 
 And that is the story of the consistency check that got so good at its job that it disappeared. Because one thing that's better than managed coupling is... no coupling.
