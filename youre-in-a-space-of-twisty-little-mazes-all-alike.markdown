@@ -126,7 +126,7 @@ After a day or so of these ideas sloshing around in my head, I came up with a be
 
 I also uncovered [a string-handling bug](https://rt.perl.org/Ticket/Display.html?id=123602) in MoarVM as part of writing this. Under certain circumstances, `substr` on a string built using `x` gives the wrong answer. Internally, MoarVM uses something called [ropes](https://en.wikipedia.org/wiki/Rope_(data_structure\)) to represent strings. Among other things, MoarVM ropes can encode repetitions such as the ones `x` creates, to reduce memory footprint and computation. But something throws `substr` off the scent in this particular case. And my toy problem helped discover it. ♥
 
-[Bug still open](https://rt.perl.org/Ticket/Display.html?id=123602) as of this writing, looking for someone willing to tackle a ropey problem.
+*Update*: [Bug was finally fixed](https://rt.perl.org/Ticket/Display.html?id=123602) by jnthn++ in July 2016.
 
     <jnthn> Too bad it gets the wrong answer, rather than getting into an
             infinite loop
