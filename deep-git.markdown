@@ -13,7 +13,9 @@ Imagining what it's like to be really good at chess is very interesting, though.
 
 I can even get a sense of what terms a master-level player uses internally, by reading what master players wrote. They focus on tactics and strategy. Attacks and defenses. Material and piece values. Sacrifices and piece exchange. Space and control. Exploiting weaknesses. Initiative. Openings and endgames.
 
-I mostly want you to note how far behind such notions leave the basic mechanics of piece movements. Sure, those movements are in there somewhere. They are not irrelevant, of course. They're just taken for granted and no longer interesting in themselves. Meanwhile, the list of master-player concerns above could almost equally well apply to a professional Go player. (`s:g/stone/piece/` for Go.) Master-level players have stopped looking at individual trees, and are now focusing on the forest.
+Such high-level concerns leave the basic mechanics of piece movements far behind. Sure, those movements are in there somewhere. They are not irrelevant, of course. They're just taken for granted and no longer interesting in themselves. Meanwhile, the list of master-player concerns above could almost equally well apply to a professional Go player. (`s:g/piece/stone/` for Go.)
+
+Master-level players have stopped looking at individual trees, and are now focusing on the forest.
 
 <center>❦</center>
 
