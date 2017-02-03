@@ -62,6 +62,8 @@ Note in particular the interplay between process, quality and, yes, Git. Someone
 
 Somewhere along the way, I also got a much more laid-back approach to conflicts. (And I stopped saying "merge conflicts", because there are also conflicts during rebase, revert, cherry-pick, and stash &mdash; and they are basically the same deal.) A conflict happens when a patch P needs to be applied in an environment which differs too much from the one in which P was created.
 
+*Aside*: in response to this post, jast++ wrote this on #perl6: "one minor nitpick: git knows two different meanings for 'merge'. one is commit-level merge, one is file-level three-way merge. the latter is used in rebase, cherry-pick etc., too, so technically those conflicts can still be called merge conflicts. :)" &mdash; TIL.
+
 But we actually don't care so much about conflicts. *Git* cares about conflicts, becuase it can't just apply the patch automatically. What we care about is that the *intent* of the patch has survived. No software can check that for us. Since the (conflict ↔ no conflict) axis is independent from the (intent broken ↔ intent preserved) axis, we get four cases in total. Two of those are straightforward, because the (lack of) conflict corresponds to the (lack of) broken intent.
 
 The remaining two cases happen rarely but are still worth thinking about:
@@ -74,6 +76,8 @@ The remaining two cases happen rarely but are still worth thinking about:
     2. For a course I made up another example: in branch A, an old naming convention gets replaced with a new one. Meanwhile, in simultaneous branch B, a file gets added according to the old naming convention. The order in which A and B get merged into `master` doesn't matter &mdash; the result is still conflict-free but wrong.
 
 If we care about quality, one lesson emerges from mst's example: always run the tests after you merge and after you've resolved conflicts. And another lesson from my example: try to introduce automatic checks for structures and relations in the code base that you care about. In this case, branch A could've put in a test or a linting step that failed as soon as it saw something according to the old naming convention.
+
+A lot of the focus on quality also has to do with doggedly going to the bottom of things. It's in the nature of failures and exceptional circumstances to clump together and happen at the same time. So you need to handle them one at a time, carefully unraveling one effect at a time, [slowly disassembling the hex like a child's rod puzzle](http://www.hpmor.com/chapter/54). Git sure helps with structuring and linearizing the mess that happens in everyday development, exploration, and debugging.
 
 As I write this, I realize even more how even when I try to describe how Git has faded into the background as something important-but-uninteresting for me, I can barely keep the other concepts *out* of focus. Quality being chief among them. In my opinion, the focus on improving not just the code but the process, of leaving the campground cleaner than we found it, those are the things that make it meaningful for me to work as a developer even decades later. The feeling that code is a kind of poetry that punches you back &mdash; but as it does so, we learn something valuable for next time.
 
