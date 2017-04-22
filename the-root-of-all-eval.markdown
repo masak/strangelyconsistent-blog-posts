@@ -30,7 +30,7 @@ To add insult to injury, the renamed `EVAL` is also made deliberately harder to 
     $ perl6 -e'use MONKEY-SEE-NO-EVAL; my $program = q[say "OH HAI"]; EVAL $program'
     OH HAI
 
-Firstly, injection attacks are a real issue, and no laughing matter. We should educate each other and newcomer about them.
+Firstly, injection attacks are a real issue, and no laughing matter. We should educate each other and newcomers about them.
 
 Secondly, that error message (`"EVAL is a very dangerous function!!!"`) is completely over-the-top in a way that damages rather than helps. I believe when we explain the dangers of code injection to people, we need to do it calmly and matter-of-factly. Not with three exclamation marks. The error message makes sense to [someone who already knows about injection attacks](http://bobby-tables.com/); it provides no hints or clues for people who are unaware of the risks.
 
