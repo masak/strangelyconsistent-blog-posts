@@ -36,7 +36,7 @@ Secondly, that error message (`"EVAL is a very dangerous function!!!"`) is compl
 
 (The Perl 6 community is not unique in `eval`-hysteria. Yesterday I stumbled across a StackOverflow thread about how to turn a string with a type name into the corresponding constructor in JavaScript. Some unlucky soul suggested `eval`, and everybody else immediately piled on to point out how irresponsible that was. Solely as a knee-jerk reaction "because eval is bad".)
 
-Thirdly, `MOKNEY-SEE-NO-EVAL`. Please, can we just... not. 😓 Random reference to monkies and the weird attempt at levity while switching on a nuclear-chainsaw function aside, I find it odd that a function that *enables* `EVAL` is called something with `NO-EVAL`. That's not Least Surprise.
+Thirdly, `MONKEY-SEE-NO-EVAL`. Please, can we just... not. 😓 Random reference to monkies and the weird attempt at levity while switching on a nuclear-chainsaw function aside, I find it odd that a function that *enables* `EVAL` is called something with `NO-EVAL`. That's not Least Surprise.
 
 Anyway, the other day I realized how I can get around both the problem of the all-caps name and the problem of the necessary pragma:
 
