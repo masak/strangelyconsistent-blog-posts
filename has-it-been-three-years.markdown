@@ -33,3 +33,5 @@ I tried to write those in increasing order of difficulty.
 All in all, I'm quite eager to one day burst into `#perl6` or `#perl6-dev` and actually showcase examples where macros quite *clearly* do useful, non-trivial things. 007 is and has always been about producing such examples, and making them run in a real (if toy) environment.
 
 And while we're not quite over that hump yet, we're perceptibly closer than we were two years ago.
+
+*Belated addendum*: Thanks and hugs to sergot++, to vendethiel++, to raiph++ and eritain++, for sharing the journey with me so far.
