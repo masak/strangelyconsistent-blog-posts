@@ -13,6 +13,13 @@ So in a weird way, even though the language is not as far along as I would expec
 
 In the previous blog post, I proudly announce that "We're gearing up to an (internal) v1.0.0 release". Well, we're *still* gearing up for v1.0.0, and we are closer to it. The details are in [the roadmap](https://github.com/masak/007/blob/master/ROADMAP.md), which has become much more detailed since then.
 
+Noteworthy things that happened in these past two years:
+
+* I've gone full circle, [trying a *very difficult* thing first with strategy A, then with B, and now with A again](https://github.com/masak/007/issues/212#issuecomment-320449569).
+* I've had to invent a new term, "injectile", for [the bit of code a macro produces; often a copy of a quasi block](https://github.com/masak/007/issues/212#issuecomment-330138105).
+* An issue about quasi unquotes has stalled because parsing is hard enough without differently-shaped holes, and [was hijacked by very interesting discussions about syntax and whether "quasi" is a fitting name for the thing it signifies](https://github.com/masak/007/issues/30).
+* I've [understood new things about templates](https://github.com/masak/007/issues/30#issuecomment-331633998).
+
 Things that I'm looking forward to right now:
 
 * Landing `macro infix:<ff>` in `master`, which is quite literally one small fix away at this point.
