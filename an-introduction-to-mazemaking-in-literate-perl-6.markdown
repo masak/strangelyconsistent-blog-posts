@@ -7,7 +7,7 @@ When I was younger and programmed in BASIC, there were some programs I kept comi
 
 One particular type of program I wrote was a program that drew [labyrinths](http://en.wikipedia.org/wiki/Labyrinth).
 
-I still remember the different mode numbers for switching to graphic modes in [Turbo Basic](http://en.wikipedia.org/wiki/Turbo_Basic) and [QBasic](http://en.wikipedia.org/wiki/QBasic): `SCREEN 7` switched to 320x200x16 EGA graphics, while `SCREEN 8` gave you 640x200x16 (and thus, quite non-quadratic pixels). `SCREEN 9` and `SCREEN 12` provided even higher resolutions... but it wasn't the resolution that was the attractive part for me. It was speeding up the algorithm.
+I still remember the different mode numbers for switching to graphic modes in [Turbo Basic](http://en.wikipedia.org/wiki/Turbo_Basic) and [QBasic](http://en.wikipedia.org/wiki/QBasic): `SCREEN 7` switched to 320x200x16 EGA graphics, while `SCREEN 8` gave you 640x200x16 (and thus, quite non-square pixels). `SCREEN 9` and `SCREEN 12` provided even higher resolutions... but it wasn't the resolution that was the attractive part for me. It was speeding up the algorithm.
 
 By the time I finally learned about [Big O notation](http://en.wikipedia.org/wiki/Big_O_notation), it made perfect sense due to experiences such as those I had with my labyrinth programs. In this post, I'll explain not only why my programs were slow, but how I later learned about real algorithms and data structures, went back and made my program fast, and found total happiness.
 
