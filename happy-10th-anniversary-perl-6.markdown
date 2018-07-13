@@ -3,7 +3,7 @@ title: Happy 10th anniversary, Perl 6
 author: Carl Mäsak
 created: 2010-07-18T21:34:00+02:00
 ---
-On this date exactly 10 years ago, Jon Orwant threw coffee mugs against a wallduring a meeting. Wikipedia chronicles the announcement of Perl 6 as being on July 19 ten years ago... but the throwing of mugs on the 18th can be said to spark the birth of Perl 6.
+On this date exactly 10 years ago, Jon Orwant threw coffee mugs against a wall during a meeting. Wikipedia chronicles the announcement of Perl 6 as being on July 19 ten years ago... but the throwing of mugs on the 18th can be said to spark the birth of Perl 6.
 
 Why did he throw mugs? [Larry Wall's own explanation](http://www.spidereyeballs.com/os5/set1/small_os5_r06_9705.html) covers it in sufficient detail:
 
