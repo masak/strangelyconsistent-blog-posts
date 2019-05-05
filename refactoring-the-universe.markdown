@@ -38,7 +38,7 @@ Here's why: as soon as you want to implement class declarations in 007, in the f
 
 Which is... even someone as [EVAL-positive](http://strangelyconsistent.org/blog/the-root-of-all-eval) as I wishes for a less clunky solution.
 
-In the new model, a new class comes down to calling `make-type` and dropping the result in that `TYPE` hash.
+In the new model, a new class comes down to calling `make-type` and dropping the result in that `TYPE` hash. (Wait. Or not even dropping it in the `TYPE` hash. That hash is only for things used by 007 itself, not for user types.)
 
 This is a refactor I've tried once before, back in 2017, but I failed back then because the code got too complicated and ran too slow. This time around I have a much better feeling.
 
