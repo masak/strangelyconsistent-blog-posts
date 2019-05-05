@@ -69,6 +69,6 @@ One drawback is that you're sort of running the old system and the new system in
 
 <img src="http://strangelyconsistent.org/blog/images/reaction-diagram.png">
 
-It's a pleasant way to work. To me it's been at least a partial answer to the problem of [the big rewrite](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/). If we're free to refactor the insides, we can successively arrive at a point where the new better thing has completely replaces the old thing. The way there is allowed to be a little bit more complex (on the inside) than either endpoint. Importantly, you keep a running system throughout.
+It's a pleasant way to work. To me it's been at least a partial answer to the problem of [the big rewrite](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/). If we're free to refactor the insides, we can successively arrive at a point where the new better thing has completely replaced the old thing. The way there is allowed to be a little bit more complex (on the inside) than either endpoint. Importantly, you keep a running system throughout.
 
 I don't have a concluding thought, except to say that I just managed to asset-capture arrays. Which is harder than it sounds, because arrays are _everywhere_ in the compiler and the runtime.
