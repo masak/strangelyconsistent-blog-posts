@@ -12,7 +12,7 @@ I belong to the generation of microcomputers, that wonderful moment in history w
 I grew up with that openness, that uncertainty.
 I mean, sure, we played games on them.
 A lot of games.
-But there was also plenty of programming, and a fair bit of random discovery, from DOS interrupts to MIDI to nuilding out entire fantasy realms in Lotus 1-2-3.
+But there was also plenty of programming, and a fair bit of random discovery, from DOS interrupts to MIDI to building out entire fantasy realms in Lotus 1-2-3.
 
 And I think a common factor in all that is a certain kind of simplicity, a closed universe.
 From a time that we'll never have back, before everything was a YouTube tutorial and before everyone was connected and online all the time.
