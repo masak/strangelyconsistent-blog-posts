@@ -52,6 +52,11 @@ A classic.
 The condition &mdash; `t` &mdash; will (by nature and strong habit) never be false.
 Even though the loop body is empty, it will keep executing for ever.
 
+(**Update**: A dear friend of mine who actually reads my writing pointed out what should have been obvious to me:
+I'm being needlessly obscure here by showing fragments of a programming language without identifying the programming language.
+So &mdash; what you're seeing above is [Bel](https://github.com/masak/bel/), a Lisp dialect I've been implementing for a few months now.
+You're likely to see more of it in later posts, as my implementation grows increasingly less inept.)
+
 Raku has an elegant way to write this as well: `loop {}`.
 In fact, in most languages, you can reach for something like `while (true);` or `for (;;);`.
 

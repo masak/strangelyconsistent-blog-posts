@@ -73,3 +73,10 @@ Maybe you might miss being able to persist ongoing changes between editor sessio
 But Git already has various mechanisms for that: stashing, temporary branches, more permanent branches.
 The editor (or IDE) wouldn't even really need to ask for your confirmation; it would just commit your work somewhere in a convenient form, and then restore it next time.
 
+(**Update**: I ended up not explaining this last part all that well.
+Files on disk are unfortunately a reality for the forseeable future, at least on desktops.
+But it seems to me an editor could be built that didn't "think" in terms of these files, but instead acted directly on a Git repository.
+Whether that would be an improvement or not is a separate (interesting) question;
+I've mostly been fascinated for a while that the possibility is there, to get rid of the middleman.)
+
+

@@ -18,7 +18,7 @@ Oh, an example? The one given just at the start of the book is this one:
 
 <pre><code>(x1 || !x2) &amp;&amp; (x2 || x3) &amp;&amp; (!x1 || !x3) &amp;&amp; (!x1 || !x2 || x3)</code></pre>
 
-If it were your job to satisfy the above formula, you could do it &mdash; after all, there are just 2*2*2 combinations of true/false values three boolean variables could have.
+If it were your job to satisfy the above formula, you could do it &mdash; after all, there are just 2 × 2 × 2 combinations of true/false values three boolean variables could have.
 But strong believers in progress and efficiency as we are, we throw such problems to the electronic brain.
 Get with the times, progress marches on!
 If we're lucky, we can stand and watch while lights blink seductivly on the front panel, and maybe some magnetic tape gets spun around too.
