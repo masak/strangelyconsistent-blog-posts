@@ -48,7 +48,7 @@ I dunno, maybe the "Think Different" culture they have brewing over at Apple &md
 
 Various cloud applications generally do well, too.
 Things like Google Docs, or OneNote.
-I'm find with a small "Saving..." message automatically showing up sometimes.
+I'm fine with a small "Saving..." message automatically showing up sometimes.
 If I could wish for the stars, I would like to have _both_ continuous saving for when I'm online _and_ offline editing for when I'm not.
 Seems we're not quite there yet; most cloud applications are cloud-only, not offline-first.
 
