@@ -3,7 +3,7 @@ title: 8 ball pool (epoq diary 007)
 author: Carl Mäsak
 created: 2020-09-09T22:10:00+08:00
 ---
-I don't play games on my phone much these days, but for [8 ball pool](https://cn.bing.com/images/search?q=8+ball+pool+miniclip) I make an exception.
+I don't play games on my phone much these days, but for [8 ball pool](https://bing.com/images/search?q=8+ball+pool+miniclip) I make an exception.
 It's relaxing, and somehow doesn't feel like a complete waste of time.
 
 There's something strangely alluring about a game that's based entirely on Newton's laws of motion.
