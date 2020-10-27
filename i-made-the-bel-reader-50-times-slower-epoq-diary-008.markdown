@@ -59,8 +59,7 @@ So, did we shake out any bugs from running it this way? Yes! Two different root 
 
 This is a very serious diagram about the three main components of the Bel implementation:
 
-```
-                in Perl    in Bel
+<pre><code>                in Perl    in Bel
               +----------+--------+
    Bel reader |   used   | exists |
               +----------+--------+
@@ -68,12 +67,11 @@ Bel evaluator |   used   | exists |
               +----------+--------+
   Bel printer |   used   | (todo) |
               +----------+--------+
-```
+</code></pre>
 
 In a not-too-far future, I'm hoping it will look more like this:
 
-```
-                in Perl    in Bel
+<pre><code>                in Perl    in Bel
               +----------+--------+
    Bel reader |          |  used  |
               +----------+--------+
@@ -81,7 +79,7 @@ Bel evaluator |  (used)  |  used  |
               +----------+--------+
   Bel printer |          |  used  |
               +----------+--------+
-```
+</code></pre>
 
 Think of it as the project becoming more and more self-hosting.
 
