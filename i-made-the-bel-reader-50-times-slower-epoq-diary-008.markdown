@@ -7,7 +7,7 @@ In the midst of [an intense race to the finishing line](https://github.com/masak
 
 These days, it hovers around 14 minutes, as measured by Travis CI. I consider that to be way too long, and I'm wary of making anything significantly slower, because Travis has a timeout somewhere slightly north of 20 minutes.
 
-With my recent improvement in a local branch, the test suite instead finishes in approximately 11 hours and 30 minutes. I say "approximately", becuase I've had to also fix some newly discovered bugs which likely interfered a little bit with the measurements of the previous runs.
+With my recent improvement in a local branch, the test suite instead finishes in approximately 11 hours and 30 minutes. I say "approximately", because I've had to also fix some newly discovered bugs which likely interfered a little bit with the measurements of the previous runs.
 
 Phew! Nothing like _half a day_ to make you appreciate those 14 minutes.
 
@@ -99,7 +99,7 @@ I have some pretty far-reaching plans. There's an optimizer involved. At this po
 
 But in the short run, something that I ended up calling "fastfuncs". Think of them as a manual stopgap that exists while we're all eagerly waiting for the compiler.
 
-A fastfunc is a Perl sub that does the same job as the Bel function, but without all the superfluous call, and without the interpreter overhead. The Bel interpreter knows to go look for a fastfunc (cleverly hidden invisibly "inside" a normal Bel function, in a kind of pocket dimension) and prefer it if it's there. The general contract is that you'll never know you're running a fastfunc; everything behaves the same, but is faster.
+A fastfunc is a Perl sub that does the same job as the Bel function, but without all the superfluous calls, and without the interpreter overhead. The Bel interpreter knows to go look for a fastfunc (cleverly hidden invisibly "inside" a normal Bel function, in a kind of pocket dimension) and prefer it if it's there. The general contract is that you'll never know you're running a fastfunc; everything behaves the same, but is faster.
 
 But a "funny" thing happened: the calling convention overhead that I set out to eliminate in the manually written Perl functions, instead manifested as massively duplicated code. You inline enough function calls, you end up doing the moral equivalent of Ctrl+C Ctrl+V all over the place.
 
